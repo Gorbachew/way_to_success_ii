@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.core.animation.doOnStart
 import androidx.core.view.get
 import kotlinx.android.synthetic.main.activity_game.*
+import kotlinx.android.synthetic.main.sections_buttons.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.constatns.Constants
 
@@ -15,58 +16,50 @@ class SectionsButtons (gameActivity: GameActivity) {
 
     private val _gameActivity = gameActivity
 
-    fun character(){
-        checkOpened()
+    fun sectionsButtonsClick() {
+        _gameActivity.button_game_sections_character.setOnClickListener{ SectionsButtons(_gameActivity).character() }
+        _gameActivity.button_game_sections_needs.setOnClickListener { SectionsButtons(_gameActivity).needs() }
+        _gameActivity.button_game_sections_work.setOnClickListener { SectionsButtons(_gameActivity).work() }
+        _gameActivity.button_game_sections_quality.setOnClickListener { SectionsButtons(_gameActivity).quality()  }
+        _gameActivity.button_game_sections_establishments.setOnClickListener { SectionsButtons(_gameActivity).establishments() }
+    }
+
+    private fun character(){
         StateButtons.howMuchShow = Constants.characterQuantityButtons
+        SettingsButtons(_gameActivity).character()
+        forAllButtons()
     }
-    fun needs(){
-        checkOpened()
+    private fun needs(){
         StateButtons.howMuchShow = Constants.needsQuantityButtons
+        SettingsButtons(_gameActivity).needs()
+        forAllButtons()
     }
-    fun work(){
-        checkOpened()
+    private fun work(){
         StateButtons.howMuchShow = Constants.workQuantityButtons
+        SettingsButtons(_gameActivity).work()
+        forAllButtons()
     }
-    fun quality(){
-        checkOpened()
+    private fun quality(){
         StateButtons.howMuchShow = Constants.qualityQuantityButtons
+        SettingsButtons(_gameActivity).quality()
+        forAllButtons()
     }
-    fun establishments(){
-        checkOpened()
+    private fun establishments(){
         StateButtons.howMuchShow = Constants.establishmentsQuantityButtons
+        SettingsButtons(_gameActivity).establishments()
+        forAllButtons()
     }
 
-    fun showingWindowsButton(){
-        val windowButtons = _gameActivity.layout_game_windows_buttons
-        val buttonsGroup: ViewGroup = windowButtons as ViewGroup
-        for(i in 0 .. buttonsGroup.childCount){
-            if(i == StateButtons.howMuchShow){
-                break
-            }
-            activateButton(buttonsGroup[i])
-        }
-
-        val anim = ObjectAnimator.ofFloat(windowButtons, "translationY", -200f)
-        anim.doOnStart { startAnimation() }
-        anim.duration = Constants.durationAnimationWindowButtons
-        anim.start()
-
-    }
-
-    private fun startAnimation(){
-        StateButtons.openedButtons = true
-    }
-
-    private fun activateButton(button: View){
-        button.visibility = View.VISIBLE;
+    private fun forAllButtons(){
+        checkOpened()
     }
 
     private fun checkOpened(){
         if(!StateButtons.openedButtons){
-            showingWindowsButton()
+            ButtonActions(_gameActivity).showingWindowsButton()
         }else{
             StateButtons.showAfterHiding = true
-            WindowsButtons(_gameActivity).hidingWindowsButton()
+            ButtonActions(_gameActivity).hidingWindowsButton()
         }
     }
 }

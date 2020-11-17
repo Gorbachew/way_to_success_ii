@@ -5,5 +5,6 @@ object StateButtons {
     var openedButtons = false
     var showAfterHiding = false
     var howMuchShow = 0
+    var buttonPressed = ""
 
 }

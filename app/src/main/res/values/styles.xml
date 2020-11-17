@@ -7,11 +7,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MenuButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+
     <style name="Sections_button" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">65dp</item>
         <item name="android:layout_height">65dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_margin">5dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">10dp</item>
     </style>
 
 </resources>

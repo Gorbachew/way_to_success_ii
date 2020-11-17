@@ -6,34 +6,39 @@
     android:paddingStart="10dp"
     android:paddingRight="10dp">
 
-    <Button
+    <ImageButton
         android:id="@+id/button_game_sections_character"
         style="@style/Sections_button"
         android:background="@drawable/sections_button_round"
+        android:src="@drawable/icon_sections_character"
         android:text="@string/button_empty" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button_game_sections_needs"
         style="@style/Sections_button"
         android:background="@drawable/sections_button_round"
+        android:src="@drawable/icon_sections_needs"
         android:text="@string/button_empty" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button_game_sections_work"
         style="@style/Sections_button"
         android:background="@drawable/sections_button_round"
+        android:src="@drawable/icon_sections_work"
         android:text="@string/button_empty" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button_game_sections_quality"
         style="@style/Sections_button"
         android:background="@drawable/sections_button_round"
+        android:src="@drawable/icon_sections_quality"
         android:text="@string/button_empty" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button_game_sections_establishments"
         style="@style/Sections_button"
         android:background="@drawable/sections_button_round"
+        android:src="@drawable/icon_sections_establishments"
         android:text="@string/button_empty" />
 
 </LinearLayout>
