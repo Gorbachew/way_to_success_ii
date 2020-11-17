@@ -8,31 +8,31 @@
 
     <ImageButton
         android:id="@+id/button_game_windows_one"
-        style="@style/Sections_button"
+        style="@style/SectionsButton"
         android:background="@drawable/windows_button_round"
         android:text="@string/button_empty" />
 
     <ImageButton
         android:id="@+id/button_game_windows_two"
-        style="@style/Sections_button"
+        style="@style/SectionsButton"
         android:background="@drawable/windows_button_round"
         android:text="@string/button_empty" />
 
     <ImageButton
         android:id="@+id/button_game_windows_three"
-        style="@style/Sections_button"
+        style="@style/SectionsButton"
         android:background="@drawable/windows_button_round"
         android:text="@string/button_empty" />
 
     <ImageButton
         android:id="@+id/button_game_windows_four"
-        style="@style/Sections_button"
+        style="@style/SectionsButton"
         android:background="@drawable/windows_button_round"
         android:text="@string/button_empty" />
 
     <ImageButton
         android:id="@+id/button_game_windows_five"
-        style="@style/Sections_button"
+        style="@style/SectionsButton"
         android:background="@drawable/windows_button_round"
         android:text="@string/button_empty" />
 

@@ -3,7 +3,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/color_status_bar</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -14,14 +14,33 @@
         <item name="android:padding">10dp</item>
     </style>
 
-
-    <style name="Sections_button" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="SectionsButton" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">65dp</item>
         <item name="android:layout_height">65dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:scaleType">fitCenter</item>
         <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="StatusBarTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">-15dp</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="StatusBarPercent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_status_bar_percent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/color_black</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:textSize">13sp</item>
     </style>
 
 </resources>

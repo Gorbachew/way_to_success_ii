@@ -5,4 +5,17 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="color_main_image_back">#283a9a</color>
     <color name="color_status_bar">#000000</color>
+
+
+    <color name="color_status_bar_food">#FF9422</color>
+    <color name="color_status_bar_health">#FF2222</color>
+    <color name="color_status_bar_mood">#3EFF38</color>
+    <color name="color_status_bar_percent">#08FF00</color>
+    <color name="color_status_background">#0b131e</color>
+
+
+
+
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
 </resources>

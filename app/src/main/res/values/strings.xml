@@ -5,5 +5,10 @@
     <string name="button_empty"> </string>
     <string name="button_rating">Рейтинг</string>
     <string name="button_quit">Выйти</string>
+
+    <string name="status_bar_mood_title">Настроение</string>
+    <string name="status_bar_health_title">Здоровье</string>
+    <string name="status_bar_food_title">Голод</string>
+
     <string name="mainimage">MainImage</string>
 </resources>
