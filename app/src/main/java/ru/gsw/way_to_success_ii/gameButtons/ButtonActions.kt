@@ -1,6 +1,7 @@
 package ru.gsw.way_to_success_ii.gameButtons
 
 import android.animation.ObjectAnimator
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.animation.doOnEnd
@@ -19,9 +20,9 @@ class ButtonActions(gameActivity: GameActivity) {
     private val _gameActivity = gameActivity
 
     fun hidingWindowsButton() {
-        val windowButtons = _gameActivity.layout_game_windows_buttons
+
         val anim = ObjectAnimator.ofFloat(_gameActivity.layout_game_windows_buttons, "translationY", 0f)
-        anim.doOnEnd { endAnimation(windowButtons) }
+        anim.doOnEnd { endAnimation() }
         anim.duration = Constants.durationAnimationWindowButtons
         anim.start()
     }
@@ -43,13 +44,18 @@ class ButtonActions(gameActivity: GameActivity) {
 
     }
 
-    private fun endAnimation(windowButtons: View){
+    fun disabledWindowsButtons(){
+        val windowButtons = _gameActivity.layout_game_windows_buttons
+        val buttonsGroup: ViewGroup = windowButtons as ViewGroup
+        buttonsGroup.forEach { activateButton(it, false) }
+    }
+
+    private fun endAnimation(){
         StateButtons.openedButtons = false
 
         enableButtons()
 
-        val buttonsGroup: ViewGroup = windowButtons as ViewGroup
-        buttonsGroup.forEach { activateButton(it, false) }
+        disabledWindowsButtons()
 
         if(StateButtons.showAfterHiding){
             showingWindowsButton()

@@ -22,6 +22,7 @@ class SectionsButtons (gameActivity: GameActivity) {
         _gameActivity.button_game_sections_work.setOnClickListener { SectionsButtons(_gameActivity).work() }
         _gameActivity.button_game_sections_quality.setOnClickListener { SectionsButtons(_gameActivity).quality()  }
         _gameActivity.button_game_sections_establishments.setOnClickListener { SectionsButtons(_gameActivity).establishments() }
+        ButtonActions(_gameActivity).disabledWindowsButtons()
     }
 
     private fun character(){

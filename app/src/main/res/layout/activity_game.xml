@@ -7,7 +7,7 @@
     tools:context=".GameActivity">
 
     <include
-        android:id="@+id/layout_game_windows_buttons"
+        android:id="@+id/layout_game_status_bars"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         layout="@layout/status_bars" />
