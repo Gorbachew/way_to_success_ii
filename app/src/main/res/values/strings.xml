@@ -11,4 +11,6 @@
     <string name="status_bar_food_title">Голод</string>
 
     <string name="mainimage">MainImage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

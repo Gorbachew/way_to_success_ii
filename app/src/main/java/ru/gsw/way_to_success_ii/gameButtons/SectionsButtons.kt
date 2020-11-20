@@ -1,12 +1,5 @@
 package ru.gsw.way_to_success_ii.gameButtons
 
-import android.animation.ObjectAnimator
-import android.util.Log
-import android.view.View
-import android.view.ViewGroup
-import androidx.core.animation.doOnStart
-import androidx.core.view.get
-import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.sections_buttons.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.constatns.Constants
@@ -22,7 +15,7 @@ class SectionsButtons (gameActivity: GameActivity) {
         _gameActivity.button_game_sections_work.setOnClickListener { SectionsButtons(_gameActivity).work() }
         _gameActivity.button_game_sections_quality.setOnClickListener { SectionsButtons(_gameActivity).quality()  }
         _gameActivity.button_game_sections_establishments.setOnClickListener { SectionsButtons(_gameActivity).establishments() }
-        ButtonActions(_gameActivity).disabledWindowsButtons()
+        ButtonActions(_gameActivity).hiddingWindowsButtons()
     }
 
     private fun character(){
