@@ -41,13 +41,13 @@ class ChangeFragments (gameActivity: GameActivity) {
             ) }
 
             "food" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                FoodFragment()
+                FoodFragment(_gameActivity)
             ) }
             "health" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                HealthFragment()
+                HealthFragment(_gameActivity)
             ) }
             "mood" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                MoodFragment()
+                MoodFragment(_gameActivity)
             ) }
 
             "hobbies" -> { fragmentTransaction.replace(R.id.fragment_place_main,

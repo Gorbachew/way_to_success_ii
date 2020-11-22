@@ -21,7 +21,6 @@
                 android:scaleType="fitStart" />
 
         </FrameLayout>
-
     </androidx.core.widget.NestedScrollView>
 
 

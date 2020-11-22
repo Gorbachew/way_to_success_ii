@@ -99,8 +99,8 @@ class ButtonActions(gameActivity: GameActivity) {
             "needs" -> {
                 _gameActivity.button_game_sections_needs.isEnabled = false
                 _gameActivity.button_game_windows_one.setImageResource(R.drawable.icon_windows_food)
-                _gameActivity.button_game_windows_two.setImageResource(R.drawable.icon_windows_hearth)
-                _gameActivity.button_game_windows_three.setImageResource(R.drawable.icon_windows_mood)
+                _gameActivity.button_game_windows_two.setImageResource(R.drawable.icon_windows_mood)
+                _gameActivity.button_game_windows_three.setImageResource(R.drawable.icon_windows_hearth)
             }
             "work" -> {
                 _gameActivity.button_game_sections_work.isEnabled = false

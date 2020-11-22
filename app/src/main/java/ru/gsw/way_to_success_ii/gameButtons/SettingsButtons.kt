@@ -22,8 +22,9 @@ class SettingsButtons (gameActivity: GameActivity) {
     fun needs(){
         StateButtons.buttonPressed = "needs"
         _gameActivity.button_game_windows_one.setOnClickListener { food() }
-        _gameActivity.button_game_windows_two.setOnClickListener { health() }
-        _gameActivity.button_game_windows_three.setOnClickListener { mood() }
+        _gameActivity.button_game_windows_two.setOnClickListener { mood() }
+        _gameActivity.button_game_windows_three.setOnClickListener { health() }
+
     }
     fun work(){
         StateButtons.buttonPressed = "work"

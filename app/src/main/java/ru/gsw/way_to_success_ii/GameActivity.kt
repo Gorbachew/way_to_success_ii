@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ru.gsw.way_to_success_ii.fragments.ChangeFragments
 import ru.gsw.way_to_success_ii.gameButtons.SectionsButtons
+import ru.gsw.way_to_success_ii.saveSystem.MainSaveSystem
 
 class GameActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +14,9 @@ class GameActivity : AppCompatActivity() {
         SectionsButtons(this).sectionsButtonsClick()
 
         ChangeFragments(this).connectFragments()
+
+        MainSaveSystem(this).loadMain()
+
     }
 
 
