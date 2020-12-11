@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/game_button"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/game_button_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="name"/>
+
+    <View
+        android:id="@+id/game_button_border"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_button_border"
+        />
+
+    <TextView
+        android:id="@+id/game_button_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="price"/>
+</LinearLayout>

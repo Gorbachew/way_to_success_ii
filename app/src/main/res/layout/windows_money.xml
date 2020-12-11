@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_dollars"
+        style="@style/MoneyLayout"
+        android:background="@drawable/window_money">
+        <ImageView
+            android:id="@+id/image_dollars"
+            style="@style/MoneyImage"
+            android:src="@drawable/dollar" />
+        <TextView
+            android:id="@+id/text_dollars"
+            style="@style/MoneyText"
+            android:text="@string/button_plug" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_rubles"
+        style="@style/MoneyLayout"
+        android:background="@drawable/window_money">
+        <ImageView
+            android:id="@+id/image_rubles"
+            style="@style/MoneyImage"
+            android:src="@drawable/ruble" />
+        <TextView
+            android:id="@+id/text_rubles"
+            style="@style/MoneyText"
+            android:text="@string/button_plug" />
+    </LinearLayout>
+
+
+</FrameLayout>

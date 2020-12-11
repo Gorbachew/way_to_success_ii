@@ -1,7 +1,7 @@
 package ru.gsw.way_to_success_ii.saveSystem
 
 import ru.gsw.way_to_success_ii.GameActivity
-import ru.gsw.way_to_success_ii.StatusBars.StatusBarsAction
+import ru.gsw.way_to_success_ii.statusBars.StatusBarsAction
 import ru.gsw.way_to_success_ii.main.MainVars
 
 class MainSaveSystem (gameActivity: GameActivity){

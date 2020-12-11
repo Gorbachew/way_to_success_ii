@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Way_to_success_II</string>
+    <string name="app_name">Путь к успеху II </string>
 
     <string name="button_start_game">Родиться</string>
     <string name="button_empty"> </string>
+    <string name="button_plug">plug</string>
     <string name="button_rating">Рейтинг</string>
     <string name="button_quit">Выйти</string>
 
@@ -11,6 +12,8 @@
     <string name="status_bar_food_title">Голод</string>
 
     <string name="mainimage">MainImage</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="food_drink_milk">Попить молока</string>
+
 </resources>

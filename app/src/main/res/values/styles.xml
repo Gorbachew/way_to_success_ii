@@ -43,4 +43,29 @@
         <item name="android:textSize">13sp</item>
     </style>
 
+    <style name="MoneyLayout" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">23dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="MoneyText" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/color_status_bar_percent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@color/color_black</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="MoneyImage" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">3</item>
+    </style>
+
 </resources>

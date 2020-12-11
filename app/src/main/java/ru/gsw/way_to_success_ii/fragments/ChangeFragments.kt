@@ -2,11 +2,6 @@ package ru.gsw.way_to_success_ii.fragments
 
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.R
-import ru.gsw.way_to_success_ii.fragments.character.*
-import ru.gsw.way_to_success_ii.fragments.establishments.*
-import ru.gsw.way_to_success_ii.fragments.needs.*
-import ru.gsw.way_to_success_ii.fragments.quality.*
-import ru.gsw.way_to_success_ii.fragments.work.*
 
 class ChangeFragments (gameActivity: GameActivity) {
 
@@ -31,62 +26,59 @@ class ChangeFragments (gameActivity: GameActivity) {
                 СharacteristicsFragment()
             ) }
             "environment" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                EnvironmentFragment()
+                ButtonsFragment(_gameActivity, "environment")
             ) }
             "achievements" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                AchievementsFragment()
+                ButtonsFragment(_gameActivity, "achievements")
             ) }
             "tree" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                TreeFragment()
+                ButtonsFragment(_gameActivity, "tree")
             ) }
 
             "food" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                FoodFragment(_gameActivity)
+                ButtonsFragment(_gameActivity, "food")
             ) }
             "health" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                HealthFragment(_gameActivity)
+                ButtonsFragment(_gameActivity, "health")
             ) }
             "mood" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                MoodFragment(_gameActivity)
+                ButtonsFragment(_gameActivity, "mood")
             ) }
 
             "hobbies" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                HobbiesFragment()
+                ButtonsFragment(_gameActivity, "hobbies")
             ) }
             "freelance" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                FreelanceFragment()
+                ButtonsFragment(_gameActivity, "freelance")
             ) }
             "legalwork" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                LegalworkFragment()
+                ButtonsFragment(_gameActivity, "legalwork")
             ) }
             "unlegalwork" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                UnlegalworkFragment()
+                ButtonsFragment(_gameActivity, "unlegalwork")
             ) }
             "business" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                BusinessFragment()
+                ButtonsFragment(_gameActivity, "business")
             ) }
 
             "education" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                EducationFragment()
+                ButtonsFragment(_gameActivity, "education")
             ) }
             "property" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                PropertyFragment()
+                ButtonsFragment(_gameActivity, "property")
             ) }
             "immovables" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                ImmovablesFragment()
+                ButtonsFragment(_gameActivity, "immovables")
             ) }
             "corruption" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                CorruptionFragment()
-            ) }
-            "child" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                ChildFragment()
+                ButtonsFragment(_gameActivity, "corruption")
             ) }
 
             "exchange" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                ExchangeFragment()
+                ButtonsFragment(_gameActivity, "exchange")
             ) }
             "bank" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                BankFragment()
+                ButtonsFragment(_gameActivity, "bank")
             ) }
         }
 

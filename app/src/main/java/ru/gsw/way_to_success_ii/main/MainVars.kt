@@ -2,7 +2,7 @@ package ru.gsw.way_to_success_ii.main
 
 object MainVars {
 
-    lateinit var act: String
+    var act: String = "baby"
 
     var max_health: Int = 0
     var health: Int = 0
