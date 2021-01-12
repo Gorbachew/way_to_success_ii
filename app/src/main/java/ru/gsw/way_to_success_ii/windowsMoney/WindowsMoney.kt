@@ -1,5 +1,7 @@
 package ru.gsw.way_to_success_ii.windowsMoney
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import kotlinx.android.synthetic.main.activity_game.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.R
@@ -15,6 +17,7 @@ class WindowsMoney (gameActivity: GameActivity) {
         WindowsMoneyState.windowsArray.add(WindowsMoneyState.windowDollars)
     }
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     fun windowsMoneyClick(){
         WindowsMoneyState.windowsArray.forEach {
             it.setOnClickListener{

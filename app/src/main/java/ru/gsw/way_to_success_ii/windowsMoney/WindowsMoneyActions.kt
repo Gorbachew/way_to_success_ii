@@ -3,11 +3,18 @@ package ru.gsw.way_to_success_ii.windowsMoney
 import android.animation.ObjectAnimator
 import android.os.Build
 import android.view.View
-import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
+import kotlinx.android.synthetic.main.windows_money.*
+import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.constatns.Constants
+import ru.gsw.way_to_success_ii.main.MainVars
 
 class WindowsMoneyActions {
+
+    fun setMoney(gameActivity: GameActivity){
+        gameActivity.text_rubles.text = MainVars.rubles.toString()
+        gameActivity.text_dollars.text = MainVars.dollars.toString()
+    }
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     fun showingWindows(){
@@ -25,12 +32,13 @@ class WindowsMoneyActions {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     fun hidingWindows(){
         WindowsMoneyState.windowsArray.forEachIndexed{ index, element
             ->
             transformWindows(element, 0f)
             element.setOnClickListener{
-                WindowsMoneyActions().showingWindows()
+                showingWindows()
             }
         }
     }

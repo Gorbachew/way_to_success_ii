@@ -11,6 +11,20 @@
     <string name="status_bar_health_title">Здоровье</string>
     <string name="status_bar_food_title">Голод</string>
 
+    <string name="characteristic_age">Возраст</string>
+    <string name="characteristic_respect">Уважение</string>
+    <string name="characteristic_force">Сила</string>
+    <string name="characteristic_intelligence">Интеллект</string>
+    <string name="characteristic_attractiveness">Привлекательность</string>
+    <string name="characteristic_adaptability">Адаптивность</string>
+    <string name="characteristic_creativity">Креативность</string>
+    <string name="characteristic_cheating">Плутовство</string>
+    <string name="characteristic_luck">Удача</string>
+    <string name="characteristic_hard_work">Трудолюбие</string>
+    <string name="characteristic_enterprise">Предприимчивость</string>
+
+    <string name="characteristic_police">Розыск</string>
+
     <string name="mainimage">MainImage</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

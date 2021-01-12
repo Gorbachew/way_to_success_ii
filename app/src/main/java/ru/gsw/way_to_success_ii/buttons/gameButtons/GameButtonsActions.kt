@@ -1,7 +1,6 @@
 package ru.gsw.way_to_success_ii.buttons.gameButtons
 
 import android.annotation.SuppressLint
-import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.widget.LinearLayout
@@ -32,7 +31,7 @@ class GameButtonsActions(gameActivity: GameActivity) {
             "food" -> {
                 when (MainVars.act) {
                     "baby" -> Constants.game_buttons_food_Baby.forEachIndexed { index, s ->
-                        addButton(layout, index, fragment, s)
+                        addButton(layout, index, s)
                     }
                     "child" -> {
                     }
@@ -79,7 +78,7 @@ class GameButtonsActions(gameActivity: GameActivity) {
     }
 
     @SuppressLint("SetTextI18n", "ClickableViewAccessibility")
-    private fun addButton(layout: LinearLayout, id: Int, fragment: String, name: String){
+    private fun addButton(layout: LinearLayout, id: Int, name: String){
 
         val gameButton = _gameActivity.layoutInflater.inflate(R.layout.game_button, layout, false)
 
@@ -97,7 +96,7 @@ class GameButtonsActions(gameActivity: GameActivity) {
 
     private fun onTouch(event: MotionEvent, gameButton: View, gameButtonParameters: GameButtonParameters): Boolean{
         if(event.action == 0){
-            gameButtonParameters.onClick()
+            gameButtonParameters.onClick
             gameButton.game_button_border.setBackgroundColor(_gameActivity.resources.getColor(R.color.color_button_border_pressed))
             gameButton.isPressed = true
         }
