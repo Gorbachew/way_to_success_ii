@@ -2,6 +2,7 @@ package ru.gsw.way_to_success_ii.fragments
 
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.R
+import ru.gsw.way_to_success_ii.main.MainVars
 
 class ChangeFragments (gameActivity: GameActivity) {
 

@@ -86,7 +86,6 @@ class SectionsButtonActions(gameActivity: GameActivity) {
 
     private fun changeIcons(section: String){
 
-
         when(section){
             "character" -> {
                 _gameActivity.button_game_sections_character.isEnabled = false

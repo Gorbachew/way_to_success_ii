@@ -19,6 +19,27 @@
         layout="@layout/windows_money"
         android:layout_marginStart="10dp" />
 
+    <LinearLayout
+        android:id="@+id/layout_days"
+        style="@style/MoneyLayout"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/window_money"
+        android:layout_marginEnd="10dp"
+        tools:ignore="RtlHardcoded">
+        <TextView
+            android:id="@+id/text_days"
+            style="@style/MoneyText"
+            android:gravity="right"
+            android:text="@string/button_plug" />
+        <ImageView
+            android:id="@+id/image_days"
+            style="@style/MoneyImage"
+            android:src="@drawable/icon_days"
+            android:contentDescription="@string/button_plug" />
+    </LinearLayout>
+
     <include
         android:id="@+id/layout_game_windows_buttons"
         android:layout_height="75dp"

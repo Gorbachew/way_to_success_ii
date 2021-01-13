@@ -120,7 +120,6 @@ class StatusBarsAction (gameActivity: GameActivity) {
         val statusBarsAnimations =
             StatusBarsAnimations(
                 this,
-                _gameActivity,
                 statusBar,
                 from.toFloat(),
                 to.toFloat()

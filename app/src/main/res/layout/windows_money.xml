@@ -10,7 +10,7 @@
         <ImageView
             android:id="@+id/image_dollars"
             style="@style/MoneyImage"
-            android:src="@drawable/dollar" />
+            android:src="@drawable/icon_money_dollars" />
         <TextView
             android:id="@+id/text_dollars"
             style="@style/MoneyText"
@@ -24,7 +24,7 @@
         <ImageView
             android:id="@+id/image_rubles"
             style="@style/MoneyImage"
-            android:src="@drawable/ruble" />
+            android:src="@drawable/icon_money_rubles" />
         <TextView
             android:id="@+id/text_rubles"
             style="@style/MoneyText"

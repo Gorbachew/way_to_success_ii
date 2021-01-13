@@ -11,5 +11,11 @@ object Constants {
     const val duration_animation_window_buttons: Long = 150
     const val duration_animation_status_bars: Long = 150
 
+    val days_per_move = mapOf("baby" to 30, "child" to  30, "youth" to  14, "adult" to  1, "old" to  1)
+
     val game_buttons_food_Baby = arrayOf("drink_milk")
+    val game_buttons_food_child = arrayOf("eat_soup")
+    val game_buttons_food_youth = arrayOf("eat_canteen")
+    val game_buttons_food_adult = arrayOf("eat_garbage")
+    val game_buttons_food_old = arrayOf("eat_garbage")
 }

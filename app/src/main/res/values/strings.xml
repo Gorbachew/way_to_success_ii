@@ -29,5 +29,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="food_drink_milk">Попить молока</string>
+    <string name="food_eat_soup">Поесть суп</string>
+    <string name="food_eat_canteen">Поесть в столовой</string>
+    <string name="food_eat_garbage">Искать еду на помойке</string>
 
 </resources>

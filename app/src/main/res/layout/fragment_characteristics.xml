@@ -18,7 +18,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/background_characteristics"
-                android:scaleType="fitStart" />
+                android:scaleType="fitStart"
+                android:contentDescription="@string/button_plug" />
 
             <TextView
                 android:id="@+id/characteristics_first_name"
@@ -67,7 +68,8 @@
                 android:layout_marginTop="400dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp" />
 
             <TextView
                 android:id="@+id/characteristics_force"
@@ -76,7 +78,8 @@
                 android:layout_marginTop="420dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_intelligence"
@@ -85,7 +88,8 @@
                 android:layout_marginTop="440dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_attractiveness"
@@ -94,7 +98,8 @@
                 android:layout_marginTop="460dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_creativity"
@@ -103,7 +108,8 @@
                 android:layout_marginTop="480dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_adaptability"
@@ -112,7 +118,8 @@
                 android:layout_marginTop="500dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_cheating"
@@ -121,7 +128,8 @@
                 android:layout_marginTop="520dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_luck"
@@ -130,7 +138,8 @@
                 android:layout_marginTop="540dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_hard_work"
@@ -139,7 +148,8 @@
                 android:layout_marginTop="560dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_enterprise"
@@ -148,7 +158,8 @@
                 android:layout_marginTop="580dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
             <TextView
                 android:id="@+id/characteristics_police"
@@ -157,7 +168,8 @@
                 android:layout_marginTop="600dp"
                 android:layout_marginLeft="50dp"
                 android:gravity="center"
-                android:text="@string/button_plug" />
+                android:text="@string/button_plug"
+                android:layout_marginStart="50dp"/>
 
         </FrameLayout>
     </androidx.core.widget.NestedScrollView>

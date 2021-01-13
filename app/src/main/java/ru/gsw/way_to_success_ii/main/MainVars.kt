@@ -4,6 +4,8 @@ object MainVars {
 
     var act: String = "baby"
 
+    var currentWindow = ""
+
     var max_health: Int = 0
     var health: Int = 0
     var max_mood: Int = 0
@@ -21,6 +23,7 @@ object MainVars {
     var sex: String = ""
     var age: Int = 0
     var days: Int = 0
+    var year_days = 0
 
     var force: Int = 0
     var intelligence: Int = 0

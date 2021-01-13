@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.game_button.view.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.R
 import ru.gsw.way_to_success_ii.constatns.Constants
+import ru.gsw.way_to_success_ii.main.MainActions
 import ru.gsw.way_to_success_ii.main.MainVars
 
 
@@ -33,13 +34,17 @@ class GameButtonsActions(gameActivity: GameActivity) {
                     "baby" -> Constants.game_buttons_food_Baby.forEachIndexed { index, s ->
                         addButton(layout, index, s)
                     }
-                    "child" -> {
+                    "child" -> Constants.game_buttons_food_child.forEachIndexed { index, s ->
+                        addButton(layout, index, s)
                     }
-                    "youth" -> {
+                    "youth" -> Constants.game_buttons_food_youth.forEachIndexed { index, s ->
+                        addButton(layout, index, s)
                     }
-                    "adult" -> {
+                    "adult" -> Constants.game_buttons_food_adult.forEachIndexed { index, s ->
+                        addButton(layout, index, s)
                     }
-                    "old" -> {
+                    "old" -> Constants.game_buttons_food_old.forEachIndexed { index, s ->
+                        addButton(layout, index, s)
                     }
                 }
 
@@ -87,18 +92,19 @@ class GameButtonsActions(gameActivity: GameActivity) {
             LinearLayout.LayoutParams.WRAP_CONTENT
         )
         val gameButtonParameters = GameButtonsSettings(_gameActivity).getParameters(name)
-        gameButton.game_button_name.setText(gameButtonParameters.title)
-        gameButton.game_button_price.setText(gameButtonParameters.price.toString())
-        gameButton.setId(id)
-        gameButton.setOnTouchListener { v, event -> onTouch(event, gameButton, gameButtonParameters) }
+        gameButton.game_button_name.text = gameButtonParameters.title
+        gameButton.game_button_price.text = gameButtonParameters.price.toString()
+        gameButton.id = id
+        gameButton.setOnTouchListener { _, event -> onTouch(event, gameButton, gameButtonParameters) }
         layout.addView(gameButton)
     }
 
     private fun onTouch(event: MotionEvent, gameButton: View, gameButtonParameters: GameButtonParameters): Boolean{
         if(event.action == 0){
-            gameButtonParameters.onClick
+            gameButtonParameters.onClick()
             gameButton.game_button_border.setBackgroundColor(_gameActivity.resources.getColor(R.color.color_button_border_pressed))
             gameButton.isPressed = true
+            MainActions(_gameActivity).nextMove()
         }
         else if(event.action == 1) {
             gameButton.game_button_border.setBackgroundColor(_gameActivity.resources.getColor(R.color.color_button_border))

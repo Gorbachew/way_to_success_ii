@@ -1,6 +1,7 @@
 package ru.gsw.way_to_success_ii.saveSystem
 
 import ru.gsw.way_to_success_ii.GameActivity
+import ru.gsw.way_to_success_ii.main.MainActions
 import ru.gsw.way_to_success_ii.statusBars.StatusBarsAction
 import ru.gsw.way_to_success_ii.main.MainVars
 import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
@@ -26,8 +27,9 @@ class MainSaveSystem (gameActivity: GameActivity){
         MainVars.rubles = 1
         MainVars.dollars = 2
 
-        MainVars.age = 22
-
+        MainVars.age = 0
+        MainVars.days = 0
+        MainVars.year_days = 0
 
         MainVars.force = 1
         MainVars.intelligence = 2
@@ -41,6 +43,7 @@ class MainSaveSystem (gameActivity: GameActivity){
 
         setStatusBars(_gameActivity)
         WindowsMoneyActions().setMoney(_gameActivity)
+        MainActions(_gameActivity).displayDays()
     }
 
     private fun setStatusBars(gameActivity: GameActivity){
