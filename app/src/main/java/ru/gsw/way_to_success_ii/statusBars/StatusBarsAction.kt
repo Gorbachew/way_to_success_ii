@@ -3,9 +3,11 @@ package ru.gsw.way_to_success_ii.statusBars
 import android.annotation.SuppressLint
 import android.widget.ProgressBar
 import kotlinx.android.synthetic.main.status_bars.*
+import kotlinx.android.synthetic.main.windows_money.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.constatns.Constants
 import ru.gsw.way_to_success_ii.main.MainVars
+import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
 
 class StatusBarsAction (gameActivity: GameActivity) {
 
@@ -19,7 +21,8 @@ class StatusBarsAction (gameActivity: GameActivity) {
             '-' -> MainVars.health -= value
         }
         checkValueHealth()
-        startAnimation("health", from, MainVars.health)
+        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_food, _gameActivity, "health", from, MainVars.health )
+
     }
 
     @SuppressLint("SetTextI18n")
@@ -30,7 +33,7 @@ class StatusBarsAction (gameActivity: GameActivity) {
             '-' -> MainVars.mood -= value
         }
         checkValueMood()
-        startAnimation("mood", from, MainVars.mood)
+        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_food, _gameActivity, "mood", from, MainVars.mood )
     }
 
     @SuppressLint("SetTextI18n")
@@ -41,7 +44,7 @@ class StatusBarsAction (gameActivity: GameActivity) {
             '-' -> MainVars.food -= value
         }
         checkValueFood()
-        startAnimation("food", from, MainVars.food)
+        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_food, _gameActivity, "food", from, MainVars.food )
     }
 
     @SuppressLint("SetTextI18n")
@@ -108,23 +111,5 @@ class StatusBarsAction (gameActivity: GameActivity) {
         }else if(MainVars.mood < 0){
             MainVars.mood = 0
         }
-    }
-
-    private fun startAnimation(statusBar: String, from: Int, to: Int){
-        var progressBar: ProgressBar? = null
-        when(statusBar){
-            "health" -> progressBar = _gameActivity.status_bar_health
-            "mood" -> progressBar = _gameActivity.status_bar_mood
-            "food" -> progressBar = _gameActivity.status_bar_food
-        }
-        val statusBarsAnimations =
-            StatusBarsAnimations(
-                this,
-                statusBar,
-                from.toFloat(),
-                to.toFloat()
-            )
-        statusBarsAnimations.duration = Constants.duration_animation_status_bars
-        progressBar?.startAnimation(statusBarsAnimations)
     }
 }

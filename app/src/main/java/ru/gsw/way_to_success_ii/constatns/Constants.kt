@@ -9,7 +9,7 @@ object Constants {
     const val establishments_quantity_buttons = 2
 
     const val duration_animation_window_buttons: Long = 150
-    const val duration_animation_status_bars: Long = 150
+    const val duration_animation_status_bars: Long = 300
 
     val days_per_move = mapOf("baby" to 30, "child" to  30, "youth" to  14, "adult" to  1, "old" to  1)
 

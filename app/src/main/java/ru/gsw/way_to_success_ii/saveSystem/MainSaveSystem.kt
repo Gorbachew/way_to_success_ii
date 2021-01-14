@@ -1,11 +1,10 @@
 package ru.gsw.way_to_success_ii.saveSystem
 
+import kotlinx.android.synthetic.main.activity_game.*
 import ru.gsw.way_to_success_ii.GameActivity
-import ru.gsw.way_to_success_ii.main.MainActions
 import ru.gsw.way_to_success_ii.statusBars.StatusBarsAction
 import ru.gsw.way_to_success_ii.main.MainVars
 import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
-import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyState
 
 class MainSaveSystem (gameActivity: GameActivity){
 
@@ -27,7 +26,7 @@ class MainSaveSystem (gameActivity: GameActivity){
         MainVars.rubles = 1
         MainVars.dollars = 2
 
-        MainVars.age = 0
+        MainVars.age = 5
         MainVars.days = 0
         MainVars.year_days = 0
 
@@ -43,7 +42,7 @@ class MainSaveSystem (gameActivity: GameActivity){
 
         setStatusBars(_gameActivity)
         WindowsMoneyActions().setMoney(_gameActivity)
-        MainActions(_gameActivity).displayDays()
+        WindowsMoneyActions().displayAnimationText(_gameActivity.text_days, _gameActivity, "days", 0, MainVars.days )
     }
 
     private fun setStatusBars(gameActivity: GameActivity){

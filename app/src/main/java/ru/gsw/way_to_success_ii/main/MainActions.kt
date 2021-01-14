@@ -2,43 +2,45 @@ package ru.gsw.way_to_success_ii.main
 
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.fragment_buttons.*
-import kotlinx.android.synthetic.main.fragment_buttons.view.*
+import kotlinx.android.synthetic.main.windows_money.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.buttons.gameButtons.GameButtonsActions
 import ru.gsw.way_to_success_ii.constatns.Constants
-import ru.gsw.way_to_success_ii.fragments.ButtonsFragment
 import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
 
 class MainActions(gameActivity: GameActivity) {
 
     val _gameActivity = gameActivity
 
-    fun displayDays(){
-        _gameActivity.text_days.text = MainVars.days.toString()
-    }
-
     fun nextMove(){
+        val from = MainVars.days
         MainVars.days += Constants.days_per_move.getValue(MainVars.act)
         MainVars.year_days += Constants.days_per_move.getValue(MainVars.act)
-        displayDays()
+        WindowsMoneyActions().displayAnimationText(_gameActivity.text_days, _gameActivity, "days", from, MainVars.days )
+
         checkHappyBirthday()
     }
 
     fun changeRubles( sign: Char, value: Long ){
+        val from = MainVars.rubles.toInt()
         when(sign){
             '+' -> { MainVars.rubles += value }
             '-' -> { MainVars.rubles -= value }
             '=' -> { MainVars.rubles = value }
         }
         WindowsMoneyActions().setMoney(_gameActivity)
+        WindowsMoneyActions().displayAnimationText(_gameActivity.text_rubles, _gameActivity, "rubles", from, MainVars.rubles.toInt() )
+
     }
 
     fun changeDollars( sign: Char, value: Long ){
+        val from = MainVars.dollars.toInt()
         when(sign){
             '+' -> { MainVars.dollars += value }
             '-' -> { MainVars.dollars -= value }
             '=' -> { MainVars.dollars = value }
         }
+        WindowsMoneyActions().displayAnimationText(_gameActivity.text_dollars, _gameActivity, "dollars", from, MainVars.dollars.toInt() )
     }
 
     fun checkHappyBirthday(){

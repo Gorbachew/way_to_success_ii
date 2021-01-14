@@ -54,4 +54,16 @@ class WindowsMoneyActions {
         WindowsMoneyState.windowsArray.removeAt(WindowsMoneyState.mainWindow + 1)
     }
 
+    fun displayAnimationText(view: View, gameActivity: GameActivity, statusBar: String, from: Int, to: Int){
+        val windowsAnimations =
+            WindowsAnimations(
+                gameActivity,
+                statusBar,
+                from.toFloat(),
+                to.toFloat()
+            )
+        windowsAnimations.duration = Constants.duration_animation_status_bars
+        view.startAnimation(windowsAnimations)
+    }
+
 }
