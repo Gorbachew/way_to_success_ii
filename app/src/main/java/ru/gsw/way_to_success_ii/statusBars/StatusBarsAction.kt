@@ -25,8 +25,7 @@ class StatusBarsAction (gameActivity: GameActivity) {
 
     }
 
-    @SuppressLint("SetTextI18n")
-    fun changeMoodBar(value: Int, sign: Char){
+    @SuppressLint("SetTextI18n")    fun changeMoodBar(value: Int, sign: Char){
         val from = MainVars.mood
         when(sign){
             '+' -> MainVars.mood += value

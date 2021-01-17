@@ -40,7 +40,7 @@ class ChangeFragments (gameActivity: GameActivity) {
                 ButtonsFragment(_gameActivity, "food", R.drawable.background_mood)
             ) }
             "health" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                ButtonsFragment(_gameActivity, "health", R.drawable.background_mood)
+                ButtonsFragment(_gameActivity, "health", R.drawable.background_health)
             ) }
             "mood" -> { fragmentTransaction.replace(R.id.fragment_place_main,
                 ButtonsFragment(_gameActivity, "mood", R.drawable.background_mood)

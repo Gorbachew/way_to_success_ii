@@ -1,6 +1,11 @@
 package ru.gsw.way_to_success_ii.main
 
+import ru.gsw.way_to_success_ii.saveSystem.User
+import ru.gsw.way_to_success_ii.saveSystem.UserDatabase
+
 object MainVars {
+
+    lateinit var db: UserDatabase
 
     var act: String = "baby"
 

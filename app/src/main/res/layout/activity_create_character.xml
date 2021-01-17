@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    tools:context=".CreateCharacterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/background_create_user"
+        android:contentDescription="@string/button_plug" />
+
+
+    <EditText
+        android:id="@+id/create_character_first_name"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="120dp"
+        android:padding="5dp"
+        android:background="@drawable/create_user_edit_text"
+        android:hint="@string/create_character_first_name"
+        android:autofillHints=""
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/create_character_last_name"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:padding="5dp"
+        android:background="@drawable/create_user_edit_text"
+        android:hint="@string/create_character_last_name"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:text="@string/create_character_luck"/>
+
+    <Spinner
+        android:id="@+id/create_character_luck_spinner"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/create_user_edit_text" />
+
+    <ImageButton
+        android:id="@+id/create_user_button_ok"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/menu_button_round"
+        android:src="@drawable/icon_sections_character"
+        android:padding="10dp"
+        android:contentDescription="@string/button_plug" />
+
+    <ImageButton
+        android:id="@+id/create_user_button_exit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/menu_button_round"
+        android:src="@drawable/icon_menu_exit"
+        android:padding="10dp"
+        tools:ignore="RtlHardcoded"
+        android:contentDescription="@string/button_plug" />
+
+
+</FrameLayout>

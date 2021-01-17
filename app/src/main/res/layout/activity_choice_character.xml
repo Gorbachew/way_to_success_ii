@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    tools:context=".ChoiceCharacterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        android:src="@drawable/background_create_user"
+        android:contentDescription="@string/button_plug" />
+
+    <ImageButton
+        android:id="@+id/choice_user_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="90dp"
+        android:background="@drawable/menu_button_round"
+        android:src="@drawable/icon_create_character"
+        android:padding="10dp"
+        tools:ignore="RtlHardcoded"
+        android:contentDescription="@string/button_plug" />
+
+    <ImageButton
+        android:id="@+id/choice_user_button_exit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/menu_button_round"
+        android:src="@drawable/icon_menu_exit"
+        android:padding="10dp"
+        tools:ignore="RtlHardcoded"
+        android:contentDescription="@string/button_plug" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp">
+
+        <LinearLayout
+            android:id="@+id/layout_character_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</FrameLayout>

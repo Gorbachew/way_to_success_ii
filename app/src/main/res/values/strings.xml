@@ -1,6 +1,27 @@
 <resources>
     <string name="app_name">Путь к успеху II </string>
 
+    <!--  Choice Activity  -->
+    <string name="choice_character_alert_title">Удаление персонажа</string>
+    <string name="choice_character_alert_text_part_one">Вы действительно хотите удалить персонажа</string>
+    <string name="choice_character_alert_agree">Удалить</string>
+    <string name="choice_character_alert_disagree">Отложить</string>
+
+
+    <!--  Create Activity  -->
+    <string name="create_character_first_name">Имя</string>
+    <string name="create_character_last_name">Фамилия</string>
+    <string name="create_character_luck">Удача</string>
+    <string-array name="create_character_luck_spinner">
+        <item>Безумец</item>
+        <item>Неудачник</item>
+        <item>Обычная</item>
+        <item>Счастливчик</item>
+        <item>Случайно</item>
+    </string-array>
+
+
+
     <string name="button_start_game">Родиться</string>
     <string name="button_empty"> </string>
     <string name="button_plug">plug</string>
