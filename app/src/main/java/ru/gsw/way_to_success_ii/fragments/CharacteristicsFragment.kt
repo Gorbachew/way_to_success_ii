@@ -11,7 +11,7 @@ import ru.gsw.way_to_success_ii.R
 import ru.gsw.way_to_success_ii.main.MainVars
 
 
-class СharacteristicsFragment : Fragment() {
+class CharacteristicsFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,7 +27,7 @@ class СharacteristicsFragment : Fragment() {
     private fun setParam(view: View){
         view.characteristics_first_name.text = MainVars.first_name
         view.characteristics_last_name.text = MainVars.last_name
-        view.characteristics_sex.text = MainVars.sex
+        view.characteristics_sex.text = MainVars.gender
         view.characteristics_age.text = getString(R.string.characteristic_age) + ": " + MainVars.age.toString()
 
         view.characteristics_respect.text = getString(R.string.characteristic_respect) + ": " + MainVars.respect

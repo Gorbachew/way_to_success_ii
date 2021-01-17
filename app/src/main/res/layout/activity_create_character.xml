@@ -38,6 +38,7 @@
         android:autofillHints=""
         android:inputType="text" />
 
+
     <TextView
         android:layout_gravity="center"
         android:layout_marginBottom="50dp"
@@ -45,6 +46,26 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
         android:textSize="8pt"
+        android:textStyle="bold"
+        android:text="@string/create_character_gender"/>
+
+    <Spinner
+        android:id="@+id/create_character_gender_spinner"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/create_user_edit_text" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="8pt"
+        android:layout_marginTop="60dp"
         android:textStyle="bold"
         android:text="@string/create_character_luck"/>
 
@@ -54,7 +75,7 @@
         android:layout_height="30dp"
         android:layout_gravity="center"
         android:padding="5dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/create_user_edit_text" />
 
     <ImageButton
@@ -63,7 +84,7 @@
         android:layout_height="60dp"
         android:scaleType="fitCenter"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/menu_button_round"
         android:src="@drawable/icon_sections_character"
         android:padding="10dp"

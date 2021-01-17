@@ -29,7 +29,7 @@ class GameButtonsActions(gameActivity: GameActivity) {
             "tree" -> {
             }
 
-            "food" -> {
+            "satiety" -> {
                 when (MainVars.act) {
                     "baby" -> Constants.game_buttons_food_Baby.forEachIndexed { index, s ->
                         addButton(layout, index, s)

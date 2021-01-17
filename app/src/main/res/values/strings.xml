@@ -7,11 +7,17 @@
     <string name="choice_character_alert_agree">Удалить</string>
     <string name="choice_character_alert_disagree">Отложить</string>
 
+    <string name="choice_character_first_name">Имя</string>
+    <string name="choice_character_age">Возраст</string>
+    <string name="choice_character_rubles">₽</string>
+    <string name="choice_character_dollars">$</string>
+
 
     <!--  Create Activity  -->
     <string name="create_character_first_name">Имя</string>
     <string name="create_character_last_name">Фамилия</string>
     <string name="create_character_luck">Удача</string>
+    <string name="create_character_gender">Гендер</string>
     <string-array name="create_character_luck_spinner">
         <item>Безумец</item>
         <item>Неудачник</item>
@@ -19,8 +25,18 @@
         <item>Счастливчик</item>
         <item>Случайно</item>
     </string-array>
-
-
+    <string-array name="create_character_gender_spinner">
+        <item>Мужчина</item>
+        <item>Женщина</item>
+        <item>Би</item>
+        <item>Асексуал</item>
+        <item>Трансгендер</item>
+        <item>Майонез</item>
+        <item>Боевой вертолет</item>
+        <item>Билли</item>
+        <item>Червик</item>
+        <item>Случайно</item>
+    </string-array>
 
     <string name="button_start_game">Родиться</string>
     <string name="button_empty"> </string>
@@ -30,7 +46,7 @@
 
     <string name="status_bar_mood_title">Настроение</string>
     <string name="status_bar_health_title">Здоровье</string>
-    <string name="status_bar_food_title">Голод</string>
+    <string name="status_bar_satiety_title">Голод</string>
 
     <string name="characteristic_age">Возраст</string>
     <string name="characteristic_respect">Уважение</string>

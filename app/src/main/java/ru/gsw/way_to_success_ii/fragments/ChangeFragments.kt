@@ -12,7 +12,7 @@ class ChangeFragments (gameActivity: GameActivity) {
         val fragmentManager = _gameActivity.supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.add(R.id.fragment_place_main,
-            СharacteristicsFragment()
+            CharacteristicsFragment()
         )
         fragmentTransaction.commit()
     }
@@ -24,7 +24,7 @@ class ChangeFragments (gameActivity: GameActivity) {
 
         when(nameFragments){
             "characteristics" -> { fragmentTransaction.replace(R.id.fragment_place_main,
-                СharacteristicsFragment()
+                CharacteristicsFragment()
             ) }
             "environment" -> { fragmentTransaction.replace(R.id.fragment_place_main,
                 ButtonsFragment(_gameActivity, "environment", R.drawable.background_mood)

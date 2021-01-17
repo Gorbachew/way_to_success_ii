@@ -8,9 +8,9 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <ProgressBar
-            android:id="@+id/status_bar_food"
+            android:id="@+id/status_bar_satiety"
             style="?android:attr/progressBarStyleHorizontal"
-            android:progressDrawable="@drawable/food_status_bar"
+            android:progressDrawable="@drawable/satiety_status_bar"
             android:progress="50"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -18,9 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             style="@style/StatusBarTitle"
-            android:text="@string/status_bar_food_title"/>
+            android:text="@string/status_bar_satiety_title"/>
         <TextView
-            android:id="@+id/status_bar_food_percent"
+            android:id="@+id/status_bar_satiety_percent"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             style="@style/StatusBarPercent"

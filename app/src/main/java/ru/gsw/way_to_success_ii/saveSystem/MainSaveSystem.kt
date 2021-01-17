@@ -1,56 +1,40 @@
 package ru.gsw.way_to_success_ii.saveSystem
 
-import kotlinx.android.synthetic.main.activity_game.*
-import ru.gsw.way_to_success_ii.GameActivity
-import ru.gsw.way_to_success_ii.statusBars.StatusBarsAction
 import ru.gsw.way_to_success_ii.main.MainVars
-import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
 
-class MainSaveSystem (gameActivity: GameActivity){
+class MainSaveSystem {
 
-    val _gameActivity = gameActivity
+    fun loadMain(user: User){
+        MainVars.idCharacter = user.id
 
-    fun loadMain(){
-        MainVars.max_health = 100
-        MainVars.health = 0
-        MainVars.max_mood = 100
-        MainVars.mood = 0
-        MainVars.max_food = 100
-        MainVars.food = 0
+        MainVars.max_health = user.max_health
+        MainVars.health = user.health
+        MainVars.max_mood = user.max_mood
+        MainVars.mood = user.mood
+        MainVars.max_satiety = user.max_satiety
+        MainVars.satiety = user.satiety
 
-        MainVars.first_name = "Maxim"
-        MainVars.last_name = "Gorbachev"
-        MainVars.sex = "Боевой вертолет"
+        MainVars.first_name = user.firstName
+        MainVars.last_name = user.lastName
+        MainVars.sex = user.sex
+        MainVars.gender = user.gender
 
-        MainVars.respect = 0
-        MainVars.rubles = 1
-        MainVars.dollars = 2
+        MainVars.respect = user.respect
+        MainVars.rubles = user.rubles
+        MainVars.dollars = user.dollars
 
-        MainVars.age = 5
-        MainVars.days = 0
-        MainVars.year_days = 0
+        MainVars.age = user.age
+        MainVars.days = user.days
+        MainVars.year_days = user.year_days
 
-        MainVars.force = 1
-        MainVars.intelligence = 2
-        MainVars.attractiveness = 3
-        MainVars.adaptability = 4
-        MainVars.creativity = 5
-        MainVars.cheating = 6
-        MainVars.luck = 7
-        MainVars.hard_work = 8
-        MainVars.enterprise = 9
-
-        setStatusBars(_gameActivity)
-        WindowsMoneyActions().setMoney(_gameActivity)
-        WindowsMoneyActions().displayAnimationText(_gameActivity.text_days, _gameActivity, "days", 0, MainVars.days )
-    }
-
-    private fun setStatusBars(gameActivity: GameActivity){
-        StatusBarsAction(gameActivity).setMoodBar(MainVars.health)
-        StatusBarsAction(gameActivity).setHealthBar(MainVars.mood)
-        StatusBarsAction(gameActivity).setFoodBar(MainVars.food)
-        StatusBarsAction(gameActivity).setMaxMoodBar(MainVars.max_mood)
-        StatusBarsAction(gameActivity).setMaxHealthBar(MainVars.max_health)
-        StatusBarsAction(gameActivity).setMaxFoodBar(MainVars.max_food)
+        MainVars.force = user.force
+        MainVars.intelligence = user.intelligence
+        MainVars.attractiveness = user.attractiveness
+        MainVars.adaptability = user.adaptability
+        MainVars.creativity = user.creativity
+        MainVars.cheating = user.cheating
+        MainVars.luck = user.luck
+        MainVars.hard_work = user.hard_work
+        MainVars.enterprise = user.enterprise
     }
 }

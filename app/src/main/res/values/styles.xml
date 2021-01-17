@@ -68,4 +68,12 @@
         <item name="android:layout_weight">3</item>
     </style>
 
+    <style name="TextChoiceCharacter" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
 </resources>

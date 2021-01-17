@@ -21,7 +21,7 @@ class StatusBarsAction (gameActivity: GameActivity) {
             '-' -> MainVars.health -= value
         }
         checkValueHealth()
-        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_food, _gameActivity, "health", from, MainVars.health )
+        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_satiety, _gameActivity, "health", from, MainVars.health )
 
     }
 
@@ -32,18 +32,18 @@ class StatusBarsAction (gameActivity: GameActivity) {
             '-' -> MainVars.mood -= value
         }
         checkValueMood()
-        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_food, _gameActivity, "mood", from, MainVars.mood )
+        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_satiety, _gameActivity, "mood", from, MainVars.mood )
     }
 
     @SuppressLint("SetTextI18n")
     fun changeFoodBar(value: Int, sign: Char){
-        val from = MainVars.food
+        val from = MainVars.satiety
         when(sign){
-            '+' -> MainVars.food += value
-            '-' -> MainVars.food -= value
+            '+' -> MainVars.satiety += value
+            '-' -> MainVars.satiety -= value
         }
         checkValueFood()
-        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_food, _gameActivity, "food", from, MainVars.food )
+        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_satiety, _gameActivity, "food", from, MainVars.satiety )
     }
 
     @SuppressLint("SetTextI18n")
@@ -61,38 +61,38 @@ class StatusBarsAction (gameActivity: GameActivity) {
     }
 
     @SuppressLint("SetTextI18n")
-    fun setFoodBar(value: Int){
-        MainVars.food = value
-        _gameActivity.status_bar_food.progress = MainVars.food
-        _gameActivity.status_bar_food_percent.text = MainVars.food.toString() + "/" + MainVars.max_food.toString()
+    fun setSatietyBar(value: Int){
+        MainVars.satiety = value
+        _gameActivity.status_bar_satiety.progress = MainVars.satiety
+        _gameActivity.status_bar_satiety_percent.text = MainVars.satiety.toString() + "/" + MainVars.max_satiety.toString()
     }
 
     @SuppressLint("SetTextI18n")
     fun setMaxHealthBar(value: Int){
-        MainVars.max_food = value
+        MainVars.max_satiety = value
         _gameActivity.status_bar_health.progress = MainVars.health
         _gameActivity.status_bar_health_percent.text = MainVars.health.toString() + "/" + MainVars.max_health.toString()
     }
 
     @SuppressLint("SetTextI18n")
     fun setMaxMoodBar(value: Int){
-        MainVars.max_food = value
+        MainVars.max_satiety = value
         _gameActivity.status_bar_mood.progress = MainVars.mood
         _gameActivity.status_bar_mood_percent.text = MainVars.mood.toString() + "/" + MainVars.max_mood.toString()
     }
 
     @SuppressLint("SetTextI18n")
-    fun setMaxFoodBar(value: Int){
-        MainVars.max_food = value
-        _gameActivity.status_bar_food.progress = MainVars.food
-        _gameActivity.status_bar_food_percent.text = MainVars.food.toString() + "/" + MainVars.max_food.toString()
+    fun setMaxSatietyBar(value: Int){
+        MainVars.max_satiety = value
+        _gameActivity.status_bar_satiety.progress = MainVars.satiety
+        _gameActivity.status_bar_satiety_percent.text = MainVars.satiety.toString() + "/" + MainVars.max_satiety.toString()
     }
 
     private fun checkValueFood(){
-        if(MainVars.food > MainVars.max_food){
-            MainVars.food = MainVars.max_food
-        }else if(MainVars.food < 0){
-            MainVars.food = 0
+        if(MainVars.satiety > MainVars.max_satiety){
+            MainVars.satiety = MainVars.max_satiety
+        }else if(MainVars.satiety < 0){
+            MainVars.satiety = 0
         }
     }
 

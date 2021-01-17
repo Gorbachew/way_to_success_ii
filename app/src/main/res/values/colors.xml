@@ -8,7 +8,7 @@
     <color name="color_status_bar">#000000</color>
 
 
-    <color name="color_status_bar_food">#FF9422</color>
+    <color name="color_status_bar_satiety">#FF9422</color>
     <color name="color_status_bar_health">#FF2222</color>
     <color name="color_status_bar_mood">#3EFF38</color>
     <color name="color_status_bar_percent">#08FF00</color>

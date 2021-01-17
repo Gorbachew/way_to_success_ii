@@ -1,11 +1,11 @@
 package ru.gsw.way_to_success_ii.main
 
-import ru.gsw.way_to_success_ii.saveSystem.User
 import ru.gsw.way_to_success_ii.saveSystem.UserDatabase
 
 object MainVars {
 
     lateinit var db: UserDatabase
+    var idCharacter: Int = 0
 
     var act: String = "baby"
 
@@ -15,8 +15,8 @@ object MainVars {
     var health: Int = 0
     var max_mood: Int = 0
     var mood: Int = 0
-    var max_food: Int = 0
-    var food: Int = 0
+    var max_satiety: Int = 0
+    var satiety: Int = 0
 
     var first_name: String = ""
     var last_name: String = ""
@@ -25,7 +25,8 @@ object MainVars {
     var rubles: Long = 0
     var dollars: Long = 0
 
-    var sex: String = ""
+    var sex: Int = 0
+    var gender: String = ""
     var age: Int = 0
     var days: Int = 0
     var year_days = 0

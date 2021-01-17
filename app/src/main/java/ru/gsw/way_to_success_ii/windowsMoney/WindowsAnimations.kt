@@ -31,7 +31,7 @@ class WindowsAnimations (gameActivity: GameActivity,  obj_name: String, from: Fl
 
             "health" -> StatusBarsAction(_gameActivity).setHealthBar(value.toInt())
             "mood" -> StatusBarsAction(_gameActivity).setMoodBar(value.toInt())
-            "food" -> StatusBarsAction(_gameActivity).setFoodBar(value.toInt())
+            "satiety" -> StatusBarsAction(_gameActivity).setSatietyBar(value.toInt())
         }
     }
 

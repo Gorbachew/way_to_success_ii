@@ -19,7 +19,7 @@
         <clip>
             <shape>
                 <gradient
-                    android:startColor="@color/color_status_bar_food"
+                    android:startColor="@color/color_status_bar_satiety"
                     android:centerColor="@color/color_status_background"
                     android:centerY="1.0"
                     android:endColor="#06101d"
