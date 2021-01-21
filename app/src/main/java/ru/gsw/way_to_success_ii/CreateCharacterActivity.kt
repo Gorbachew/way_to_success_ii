@@ -6,7 +6,9 @@ import android.util.Log
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_create_character.*
+import ru.gsw.way_to_success_ii.main.MainVars
 import ru.gsw.way_to_success_ii.saveSystem.InsertAll
+import ru.gsw.way_to_success_ii.saveSystem.MainSaveSystem
 import ru.gsw.way_to_success_ii.saveSystem.User
 import java.util.*
 import kotlin.random.Random
@@ -21,7 +23,8 @@ class CreateCharacterActivity : AppCompatActivity() {
 
     private fun setButtonClick(){
         create_user_button_ok.setOnClickListener{
-            InsertAll(enrichmentUser()).execute()
+            //InsertAll(enrichmentUser()).execute()
+            enrichmentUser()
             val intent = Intent(this, ChoiceCharacterActivity::class.java)
             startActivity(intent)
         }
@@ -42,45 +45,57 @@ class CreateCharacterActivity : AppCompatActivity() {
         create_character_gender_spinner.adapter = adapterGender
     }
 
-    private fun enrichmentUser(): User{
+    private fun enrichmentUser(){
 
         val gender = getGender()
         val luck = getLuck()
-        return User(
-            100,
-            0,
-            100,
-            0,
-            100,
-            0,
-            create_character_first_name.text.toString(),
-            create_character_last_name.text.toString(),
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            recognizeSex(gender),
-            gender,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            luck,
-            0,
-            0
-            )
 
+        MainVars.max_health = 100
+        MainVars.max_mood = 100
+        MainVars.max_satiety = 100
+        MainVars.act = "baby"
+        MainVars.first_name = create_character_first_name.text.toString()
+        MainVars.last_name = create_character_last_name.text.toString()
+        MainVars.sex = recognizeSex(gender)
+        MainVars.gender = gender
+        MainVars.luck = luck
+
+        MainSaveSystem().createMain()
+//        return User(
+//            100,
+//            0,
+//            100,
+//            0,
+//            100,
+//            0,
+//            create_character_first_name.text.toString(),
+//            create_character_last_name.text.toString(),
+//            0,
+//            0,
+//            0,
+//            0,
+//            0,
+//            0,
+//            0,
+//            recognizeSex(gender),
+//            gender,
+//            0,
+//            0,
+//            0,
+//            0,
+//            0,
+//            0,
+//            luck,
+//            0,
+//            0
+//            )
     }
 
     private fun getGender(): String{
         val gender = create_character_gender_spinner.selectedItem as String
         if(gender == "Случайно"){
             val genderArray = resources.getStringArray(R.array.create_character_gender_spinner)
-            return genderArray[Random.nextInt(0, genderArray.size)]
+            return genderArray[Random.nextInt(0, genderArray.size - 1)]
         }
         return gender
     }
@@ -90,7 +105,7 @@ class CreateCharacterActivity : AppCompatActivity() {
         if(luck == 4){
             val luckArray = resources.getStringArray(R.array.create_character_luck_spinner)
             Log.e("TEST", luckArray.size.toString() + " " + Random.nextInt(0, luckArray.size))
-            return Random.nextInt(0, luckArray.size)
+            return Random.nextInt(0, luckArray.size - 1)
         }
         return  luck
     }

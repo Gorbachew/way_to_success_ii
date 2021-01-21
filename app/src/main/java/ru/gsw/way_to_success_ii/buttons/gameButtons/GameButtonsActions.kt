@@ -1,10 +1,10 @@
 package ru.gsw.way_to_success_ii.buttons.gameButtons
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.widget.LinearLayout
-import android.widget.TextView
 import kotlinx.android.synthetic.main.game_button.view.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.R
@@ -13,9 +13,7 @@ import ru.gsw.way_to_success_ii.main.MainActions
 import ru.gsw.way_to_success_ii.main.MainVars
 
 
-class GameButtonsActions(gameActivity: GameActivity) {
-
-    val _gameActivity = gameActivity
+class GameButtonsActions(private val gameActivity: GameActivity) {
 
     fun generateButtons(layout: LinearLayout, fragment: String){
 
@@ -29,7 +27,7 @@ class GameButtonsActions(gameActivity: GameActivity) {
             "tree" -> {
             }
 
-            "satiety" -> {
+            "food" -> {
                 when (MainVars.act) {
                     "baby" -> Constants.game_buttons_food_Baby.forEachIndexed { index, s ->
                         addButton(layout, index, s)
@@ -85,13 +83,13 @@ class GameButtonsActions(gameActivity: GameActivity) {
     @SuppressLint("SetTextI18n", "ClickableViewAccessibility")
     private fun addButton(layout: LinearLayout, id: Int, name: String){
 
-        val gameButton = _gameActivity.layoutInflater.inflate(R.layout.game_button, layout, false)
+        val gameButton = gameActivity.layoutInflater.inflate(R.layout.game_button, layout, false)
 
         gameButton.layoutParams = LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.MATCH_PARENT,
             LinearLayout.LayoutParams.WRAP_CONTENT
         )
-        val gameButtonParameters = GameButtonsSettings(_gameActivity).getParameters(name)
+        val gameButtonParameters = GameButtonsSettings(gameActivity).getParameters(name)
         gameButton.game_button_name.text = gameButtonParameters.title
         gameButton.game_button_price.text = gameButtonParameters.price.toString()
         gameButton.id = id
@@ -102,12 +100,12 @@ class GameButtonsActions(gameActivity: GameActivity) {
     private fun onTouch(event: MotionEvent, gameButton: View, gameButtonParameters: GameButtonParameters): Boolean{
         if(event.action == 0){
             gameButtonParameters.onClick()
-            gameButton.game_button_border.setBackgroundColor(_gameActivity.resources.getColor(R.color.color_button_border_pressed))
+            gameButton.game_button_border.setBackgroundColor(gameActivity.resources.getColor(R.color.color_button_border_pressed))
             gameButton.isPressed = true
-            MainActions(_gameActivity).nextMove()
+            MainActions(gameActivity).nextMove()
         }
         else if(event.action == 1) {
-            gameButton.game_button_border.setBackgroundColor(_gameActivity.resources.getColor(R.color.color_button_border))
+            gameButton.game_button_border.setBackgroundColor(gameActivity.resources.getColor(R.color.color_button_border))
             gameButton.isPressed = false
         }
         return true

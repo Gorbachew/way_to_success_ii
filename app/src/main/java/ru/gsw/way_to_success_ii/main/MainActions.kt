@@ -6,19 +6,21 @@ import kotlinx.android.synthetic.main.windows_money.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.buttons.gameButtons.GameButtonsActions
 import ru.gsw.way_to_success_ii.constatns.Constants
+import ru.gsw.way_to_success_ii.saveSystem.MainSaveSystem
 import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
 
-class MainActions(gameActivity: GameActivity) {
-
-    val _gameActivity = gameActivity
+class MainActions(private val gameActivity: GameActivity) {
 
     fun nextMove(){
         val from = MainVars.days
+        MainVars.move++
         MainVars.days += Constants.days_per_move.getValue(MainVars.act)
         MainVars.year_days += Constants.days_per_move.getValue(MainVars.act)
-        WindowsMoneyActions().displayAnimationText(_gameActivity.text_days, _gameActivity, "days", from, MainVars.days )
+        WindowsMoneyActions().displayAnimationText(gameActivity.text_days, gameActivity, "days", from, MainVars.days )
 
         checkHappyBirthday()
+
+        MainSaveSystem().saveMain()
     }
 
     fun changeRubles( sign: Char, value: Long ){
@@ -28,8 +30,8 @@ class MainActions(gameActivity: GameActivity) {
             '-' -> { MainVars.rubles -= value }
             '=' -> { MainVars.rubles = value }
         }
-        WindowsMoneyActions().setMoney(_gameActivity)
-        WindowsMoneyActions().displayAnimationText(_gameActivity.text_rubles, _gameActivity, "rubles", from, MainVars.rubles.toInt() )
+        WindowsMoneyActions().setMoney(gameActivity)
+        WindowsMoneyActions().displayAnimationText(gameActivity.text_rubles, gameActivity, "rubles", from, MainVars.rubles.toInt() )
 
     }
 
@@ -40,7 +42,7 @@ class MainActions(gameActivity: GameActivity) {
             '-' -> { MainVars.dollars -= value }
             '=' -> { MainVars.dollars = value }
         }
-        WindowsMoneyActions().displayAnimationText(_gameActivity.text_dollars, _gameActivity, "dollars", from, MainVars.dollars.toInt() )
+        WindowsMoneyActions().displayAnimationText(gameActivity.text_dollars, gameActivity, "dollars", from, MainVars.dollars.toInt() )
     }
 
     fun checkHappyBirthday(){
@@ -49,6 +51,11 @@ class MainActions(gameActivity: GameActivity) {
             MainVars.age += 1
             checkAct()
         }
+    }
+
+    fun updateButton(){
+        gameActivity.buttons_fragment_main_layout.removeAllViews()
+        GameButtonsActions(gameActivity).generateButtons(gameActivity.buttons_fragment_main_layout, MainVars.currentWindow)
     }
 
     private fun checkAct(){
@@ -66,10 +73,4 @@ class MainActions(gameActivity: GameActivity) {
             updateButton()
         }
     }
-
-    fun updateButton(){
-        _gameActivity.buttons_fragment_main_layout.removeAllViews()
-        GameButtonsActions(_gameActivity).generateButtons(_gameActivity.buttons_fragment_main_layout, MainVars.currentWindow)
-    }
-
 }

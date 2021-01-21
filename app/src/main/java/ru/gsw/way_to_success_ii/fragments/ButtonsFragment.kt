@@ -15,26 +15,22 @@ import ru.gsw.way_to_success_ii.main.MainActions
 import ru.gsw.way_to_success_ii.main.MainVars
 
 
-class ButtonsFragment (gameActivity: GameActivity, name: String, background: Int): Fragment() {
-
-    private val _gameActivity = gameActivity
-    private val _name = name
-    private val _background = background
+class ButtonsFragment (private val gameActivity: GameActivity, private val name: String, private val background: Int): Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_buttons, container, false)
-        MainVars.currentWindow = _name
-        view.textView.text = _name
-        view.background_image.setImageResource(_background)
+        MainVars.currentWindow = name
+        view.textView.text = name
+        view.background_image.setImageResource(background)
 
         return view
     }
 
     override fun onStart() {
         super.onStart()
-        MainActions(_gameActivity).updateButton()
+        MainActions(gameActivity).updateButton()
     }
 }

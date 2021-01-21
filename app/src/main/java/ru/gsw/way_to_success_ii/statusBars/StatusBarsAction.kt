@@ -43,7 +43,7 @@ class StatusBarsAction (gameActivity: GameActivity) {
             '-' -> MainVars.satiety -= value
         }
         checkValueFood()
-        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_satiety, _gameActivity, "food", from, MainVars.satiety )
+        WindowsMoneyActions().displayAnimationText(_gameActivity.status_bar_satiety, _gameActivity, "satiety", from, MainVars.satiety )
     }
 
     @SuppressLint("SetTextI18n")

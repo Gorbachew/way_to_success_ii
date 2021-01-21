@@ -46,97 +46,97 @@ class SectionsButtonsSettings (gameActivity: GameActivity) {
         _gameActivity.button_game_windows_two.setOnClickListener { exchange() }
     }
 
-    fun characteristics(){
+    private fun characteristics(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("characteristics")
     }
 
-    fun environment(){
+    private fun environment(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("environment")
     }
 
-    fun achievements(){
+    private fun achievements(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("achievements")
     }
 
-    fun tree(){
+    private fun tree(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("tree")
     }
 
-    fun exit(){
+    private fun exit(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         val intent = Intent(_gameActivity, MainActivity::class.java)
         _gameActivity.startActivity(intent)
     }
 
-    fun food(){
+    private fun food(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("food")
     }
 
-    fun health(){
+    private fun health(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("health")
     }
 
-    fun mood(){
+    private fun mood(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("mood")
     }
 
-    fun hobbies(){
+    private fun hobbies(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("hobbies")
     }
-    fun freelance(){
+    private fun freelance(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("freelance")
     }
 
-    fun legalwork(){
+    private fun legalwork(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("legalwork")
     }
 
-    fun unlegalwork(){
+    private fun unlegalwork(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("unlegalwork")
     }
 
-    fun business(){
+    private fun business(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("business")
     }
 
-    fun education(){
+    private fun education(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("education")
     }
 
-    fun property(){
+    private fun property(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("property")
     }
 
-    fun immovables(){
+    private fun immovables(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("immovables")
     }
 
-    fun corruption(){
+    private fun corruption(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("corruption")
     }
 
-    fun bank(){
+    private fun bank(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("bank")
     }
 
-    fun exchange(){
+    private fun exchange(){
         SectionsButtonActions(_gameActivity).hidingWindowsButton()
         ChangeFragments(_gameActivity).change("exchange")
     }

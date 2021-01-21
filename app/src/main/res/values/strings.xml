@@ -63,11 +63,157 @@
     <string name="characteristic_police">Розыск</string>
 
     <string name="mainimage">MainImage</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="food_drink_milk">Попить молока</string>
+    <string name="food_eat_dirt">Есть грязь</string>
+    <string name="food_eat_delicious">Наестся вкусняшками</string>
     <string name="food_eat_soup">Поесть суп</string>
     <string name="food_eat_canteen">Поесть в столовой</string>
-    <string name="food_eat_garbage">Искать еду на помойке</string>
+    <string name="food_digging_garbage">Копаться в помойке</string>
+    <string name="food_beach_lunch">Бич обед</string>
+    <string name="food_fast_food">Поесть в фастфуде</string>
+    <string name="food_cafe">Поесть в кафе</string>
+    <string name="food_restaurant">Поесть в ресторане</string>
+
+    <string name="health_sleep">Поспать</string>
+    <string name="health_plantain">Съесть подорожник</string>
+    <string name="health_grandmother">Лечиться у бабки</string>
+    <string name="health_herbs">Лечиться травами</string>
+    <string name="health_parents">Лечиться у родителей</string>
+    <string name="health_homeopathy">Лечение гомеопатией</string>
+    <string name="health_state_hospital">Государственная больница</string>
+    <string name="health_private_hospital">Частная больница</string>
+    <string name="health_urine_therapy">Частная больница</string>
+
+    <string name="mood_laugh">Смеяться</string>
+    <string name="mood_dream">Мечтать</string>
+    <string name="mood_toys">Играть в игрушки</string>
+    <string name="mood_yard">Играть во дворе</string>
+    <string name="mood_boardgames">Играть в настольные игры</string>
+    <string name="mood_electronic_games">Играть в электронные игры</string>
+    <string name="mood_drink_beer">Выпить пива</string>
+    <string name="mood_cinema">Сходить в кинотеатр</string>
+    <string name="mood_friends">Потусить с друзьями</string>
+    <string name="mood_TV">Смотреть телевизор</string>
+    <string name="mood_PC">Играть в компьютер</string>
+    <string name="mood_concert">Сходить на концерт</string>
+
+    <string name="hobbies_try_walk">Пытаться ходить</string>
+    <string name="hobbies_moo">Мычать</string>
+    <string name="hobbies_smile">Красиво улыбаться</string>
+    <string name="hobbies_draw_wallpaper">Рисовать на обоях</string>
+    <string name="hobbies_karate">Сходить на секцию карате</string>
+    <string name="hobbies_puzzles">Решать головоломки</string>
+    <string name="hobbies_peers">Общаться со сверстниками </string>
+    <string name="hobbies_hide_seek">Играть в прятки</string>
+    <string name="hobbies_draw">Рисовать</string>
+    <string name="hobbies_candy">Выпрашивать конфеты</string>
+    <string name="hobbies_stones">Таскать камни</string>
+    <string name="hobbies_olympiad">Участвовать в олимпиаде</string>
+    <string name="hobbies_chat_people">Общаться с людьми</string>
+    <string name="hobbies_walk">Гулять</string>
+    <string name="hobbies_apples">Воровать яблоки</string>
+    <string name="hobbies_hall">Сходить в зал</string>
+    <string name="hobbies_program">Программировать</string>
+    <string name="hobbies_tricks">Показывать фокусы</string>
+
+    <string name="freelance_рelp">Помогать взрослым</string>
+    <string name="freelance_lemonade">Продавать лимонад</string>
+    <string name="freelance_flyers">Раздавать листовки</string>
+    <string name="freelance_sweets">Перепродавать вкусняшки</string>
+    <string name="freelance_сonstruction_site">Помогать на стройке</string>
+    <string name="freelance_neighbors">Помогать соседям</string>
+    <string name="freelance_tutor">Репетиторствовать</string>
+    <string name="freelance_draw">Рисовать на заказ</string>
+    <string name="freelance_taxi">Таксовать</string>
+    <string name="freelance_sites">Писать сайты</string>
+    <string name="freelance_standup">Выступать на стендапе</string>
+
+    <string name="legalwork_volunteer"> Стать волонтером</string>
+    <string name="legalwork_shesterochka">Стать продавцом в Шестерочке</string>
+    <string name="legalwork_housing_office">Устроиться на завод</string>
+    <string name="legalwork_factory">Устроиться в ЖЭК</string>
+    <string name="legalwork_bank">Устроиться в банк</string>
+    <string name="legalwork_programmer">Стать программистом</string>
+    <string name="legalwork_lawyer">Стать адвокатом</string>
+    <string name="legalwork_official">Стать чиновником</string>
+
+    <string name="unlegalwork_peers">Щемить сверстников</string>
+    <string name="unlegalwork_pockets">Лазать по карманам</string>
+    <string name="unlegalwork_bookmark">Делать закладки</string>
+    <string name="unlegalwork_people">Щемить людей</string>
+    <string name="unlegalwork_phone">Разводить по телефону</string>
+    <string name="unlegalwork_stall">Ограбить ларек</string>
+    <string name="unlegalwork_cars">Угнать машину</string>
+    <string name="unlegalwork_moonshine">Гнать самогон</string>
+    <string name="unlegalwork_pension_fund">Воровать у пенсионного фонда</string>
+    <string name="unlegalwork_stocks">Махинация с акциями</string>
+    <string name="unlegalwork_organs">Продавать органы</string>
+
+    <string name="business_gang">Создать банду</string>
+    <string name="business_shawarma">Открыть шаурму</string>
+    <string name="business_shop">Открыть магазин</string>
+    <string name="business_cafe">Открыть кафе</string>
+    <string name="business_farm">Создать ферму</string>
+    <string name="business_game_studio">Создать игровую студию</string>
+    <string name="business_advertising_agency">Создать рекламное агенство</string>
+    <string name="business_factory">Основать завод</string>
+
+    <string name="education_kindergarten">Детский сад</string>
+    <string name="education_school">Школа</string>
+    <string name="education_college">Колледж</string>
+    <string name="education_university">Университет</string>
+    <string name="education_overseas_university">Заграничный университет</string>
+    <string name="education_business_training">Бизнес тренинг</string>
+
+    <string name="property_toys">Игрушки</string>
+    <string name="property_cheap_clothes">Дешевая одежда</string>
+    <string name="property_table_games">Настольные игры</string>
+    <string name="property_console">Консоль</string>
+    <string name="property_good_clothes">Хорошая одежда</string>
+    <string name="property_stylish_clothes">Стильная одежда</string>
+    <string name="property_work_clothes">Рабочая одежда</string>
+    <string name="property_TV">Купить телевизор</string>
+    <string name="property_computer">Компьютер</string>
+    <string name="property_jewelry">Украшения</string>
+    <string name="property_cheap_car">Дешевая машина</string>
+    <string name="property_perfume">Парфюм</string>
+    <string name="property_business_clothes">Деловая одежда</string>
+    <string name="property_weapon">Оружие</string>
+    <string name="property_branded_clothing">Фирменная одежда</string>
+    <string name="property_foreign_car">Иностранная машина</string>
+    <string name="property_sports_car">Спортивная машина</string>
+    <string name="property_helicopter">Вертолет</string>
+    <string name="property_yacht">Яхта</string>
+
+    <string name="immovables_tent">Палатка</string>
+    <string name="immovables_rent_room">Снимать комнату</string>
+    <string name="immovables_rent_apartment">Снимать квартиру</string>
+    <string name="immovables_apartment">Купить квартиру</string>
+    <string name="immovables_house">Купить дом</string>
+    <string name="immovables_mansion">Купить особняк</string>
+
+    <string name="corruption_hooligans">Подружиться с хулиганами</string>
+    <string name="corruption_gopniks">Подружиться с гопниками</string>
+    <string name="corruption_criminals">Подружиться с криминалом</string>
+    <string name="corruption_treat_bar">Угостить всех в баре</string>
+    <string name="corruption_fines">Выплатить штрафы</string>
+    <string name="corruption_cops">Подмазать полицейских</string>
+    <string name="corruption_PR">Заказать пиар</string>
+    <string name="corruption_preelection_campaign">Предвыборная компания</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </resources>

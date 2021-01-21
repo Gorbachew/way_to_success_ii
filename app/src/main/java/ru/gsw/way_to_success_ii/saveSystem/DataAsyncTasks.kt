@@ -71,3 +71,19 @@ class GetCharacter(private val activity: ChoiceCharacterActivity, private val id
     }
 
 }
+
+class UpdateCharacter(private val user: User): AsyncTask<Void, Void, Boolean>(){
+    override fun doInBackground(vararg params: Void?): Boolean {
+
+        val userDao = MainVars.db.userDao()
+        userDao.updateAll(user)
+        
+        return true
+    }
+
+    override fun onPostExecute(result: Boolean?) {
+        super.onPostExecute(result)
+        Log.i("Save", "Success")
+    }
+
+}

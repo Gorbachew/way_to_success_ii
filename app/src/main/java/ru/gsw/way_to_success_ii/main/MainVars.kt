@@ -7,7 +7,7 @@ object MainVars {
     lateinit var db: UserDatabase
     var idCharacter: Int = 0
 
-    var act: String = "baby"
+    var act: String = ""
 
     var currentWindow = ""
 
@@ -21,15 +21,17 @@ object MainVars {
     var first_name: String = ""
     var last_name: String = ""
 
+    var move: Int = 0
+    var age: Int = 0
+    var days: Int = 0
+    var year_days = 0
+
     var respect: Long = 0
     var rubles: Long = 0
     var dollars: Long = 0
 
     var sex: Int = 0
     var gender: String = ""
-    var age: Int = 0
-    var days: Int = 0
-    var year_days = 0
 
     var force: Int = 0
     var intelligence: Int = 0

@@ -37,7 +37,7 @@ class CharacteristicsFragment : Fragment() {
         view.characteristics_creativity.text = getString(R.string.characteristic_creativity) + ": " + MainVars.creativity
         view.characteristics_adaptability.text = getString(R.string.characteristic_adaptability) + ": " + MainVars.adaptability
         view.characteristics_cheating.text = getString(R.string.characteristic_cheating) + ": " + MainVars.cheating
-        view.characteristics_luck.text = getString(R.string.characteristic_luck) + ": " + MainVars.luck
+        view.characteristics_luck.text = getString(R.string.characteristic_luck) + ": " +  resources.getStringArray(R.array.create_character_luck_spinner)[MainVars.luck]
         view.characteristics_hard_work.text = getString(R.string.characteristic_hard_work) + ": " + MainVars.hard_work
         view.characteristics_enterprise.text = getString(R.string.characteristic_enterprise) + ": " + MainVars.enterprise
         view.characteristics_police.text = getString(R.string.characteristic_police) + ": " + MainVars.police
