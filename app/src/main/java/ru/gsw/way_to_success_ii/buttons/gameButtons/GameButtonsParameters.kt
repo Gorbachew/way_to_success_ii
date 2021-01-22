@@ -4,7 +4,7 @@ import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.main.MainActions
 import ru.gsw.way_to_success_ii.statusBars.StatusBarsAction
 
-class GameButtonsSettingsFood (private val gameActivity: GameActivity) {
+class GameButtonsParameters (private val gameActivity: GameActivity) {
 
     fun drinkMilk(value: Long){
         if(GameButtonsChecks(gameActivity).rubles(value)){

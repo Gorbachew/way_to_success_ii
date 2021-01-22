@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.annotation.RequiresApi
 import kotlinx.android.synthetic.main.activity_game.*
+import ru.gsw.way_to_success_ii.buttons.sectionsButtons.SectionsButtonActions
 import ru.gsw.way_to_success_ii.fragments.ChangeFragments
 import ru.gsw.way_to_success_ii.buttons.sectionsButtons.SectionsButtons
+import ru.gsw.way_to_success_ii.buttons.sectionsButtons.SectionsButtonsState
 import ru.gsw.way_to_success_ii.main.MainActions
 import ru.gsw.way_to_success_ii.main.MainVars
 import ru.gsw.way_to_success_ii.saveSystem.MainSaveSystem
@@ -25,6 +27,7 @@ class GameActivity : AppCompatActivity() {
         ChangeFragments(this).connectFragments()
         displayParams()
         MainActions(this).initializeToast()
+        SectionsButtonActions(this).enableButtons(SectionsButtonsState.buttonPressed)
     }
 
     private fun displayParams(){

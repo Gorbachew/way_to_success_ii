@@ -1,6 +1,7 @@
 package ru.gsw.way_to_success_ii.main
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.fragment_buttons.*
@@ -60,18 +61,19 @@ class MainActions(private val gameActivity: GameActivity) {
         WindowsMoneyActions().displayAnimationText(gameActivity.text_dollars, gameActivity, "dollars", from, MainVars.dollars.toInt() )
     }
 
-    fun checkHappyBirthday(){
+    fun updateButton(){
+        gameActivity.buttons_fragment_main_layout.removeAllViews()
+        Log.e("TEST", MainVars.currentWindow + " " + MainVars.act)
+        Constants.buttons.getValue(MainVars.currentWindow).getValue(MainVars.act).forEachIndexed { index, s ->
+            GameButtonsActions(gameActivity).addButton(gameActivity.buttons_fragment_main_layout, index, s)
+        }
+    }
+
+    private fun checkHappyBirthday(){
         if(MainVars.year_days >= 365){
             MainVars.year_days -= 365
             MainVars.age += 1
             checkAct()
-        }
-    }
-
-    fun updateButton(){
-        gameActivity.buttons_fragment_main_layout.removeAllViews()
-        Constants.buttons.getValue(MainVars.currentWindow).getValue(MainVars.act).forEachIndexed { index, s ->
-            GameButtonsActions(gameActivity).addButton(gameActivity.buttons_fragment_main_layout, index, s)
         }
     }
 
