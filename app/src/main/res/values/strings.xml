@@ -68,7 +68,6 @@
     <string name="food_eat_dirt">Есть грязь</string>
     <string name="food_eat_delicious">Наестся вкусняшками</string>
     <string name="food_eat_soup">Поесть суп</string>
-    <string name="food_eat_canteen">Поесть в столовой</string>
     <string name="food_digging_garbage">Копаться в помойке</string>
     <string name="food_beach_lunch">Бич обед</string>
     <string name="food_fast_food">Поесть в фастфуде</string>
@@ -83,7 +82,8 @@
     <string name="health_homeopathy">Лечение гомеопатией</string>
     <string name="health_state_hospital">Государственная больница</string>
     <string name="health_private_hospital">Частная больница</string>
-    <string name="health_urine_therapy">Частная больница</string>
+    <string name="health_social_help">Социальная помощь</string>
+    <string name="health_urine_therapy">Уринотерапия</string>
 
     <string name="mood_laugh">Смеяться</string>
     <string name="mood_dream">Мечтать</string>
@@ -96,6 +96,7 @@
     <string name="mood_friends">Потусить с друзьями</string>
     <string name="mood_TV">Смотреть телевизор</string>
     <string name="mood_PC">Играть в компьютер</string>
+    <string name="mood_standup">Сходить на стендап</string>
     <string name="mood_concert">Сходить на концерт</string>
 
     <string name="hobbies_try_walk">Пытаться ходить</string>
@@ -145,6 +146,7 @@
     <string name="unlegalwork_phone">Разводить по телефону</string>
     <string name="unlegalwork_stall">Ограбить ларек</string>
     <string name="unlegalwork_cars">Угнать машину</string>
+    <string name="unlegalwork_business">Прессовать бизнес</string>
     <string name="unlegalwork_moonshine">Гнать самогон</string>
     <string name="unlegalwork_pension_fund">Воровать у пенсионного фонда</string>
     <string name="unlegalwork_stocks">Махинация с акциями</string>
@@ -201,6 +203,10 @@
     <string name="corruption_cops">Подмазать полицейских</string>
     <string name="corruption_PR">Заказать пиар</string>
     <string name="corruption_preelection_campaign">Предвыборная компания</string>
+
+
+    <string name="check_no_rubles">У вас недостаточно Рублей</string>
+    <string name="check_no_dollars">У вас недостаточно Долларов</string>
 
 
 

@@ -10,8 +10,8 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
         when(name){
             "drink_milk" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_drink_milk)
-                gbp.price = 0
-                gbp.onClick = { GameButtonsSettingsFood(gameActivity).drinkMilk() }
+                gbp.price = 100
+                gbp.onClick = { GameButtonsSettingsFood(gameActivity).drinkMilk(gbp.price) }
             }
             "eat_soup" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_eat_soup)

@@ -1,10 +1,12 @@
 package ru.gsw.way_to_success_ii.main
 
+import android.widget.Toast
 import ru.gsw.way_to_success_ii.saveSystem.UserDatabase
 
 object MainVars {
 
     lateinit var db: UserDatabase
+    lateinit var toast: Toast
     var idCharacter: Int = 0
 
     var act: String = ""

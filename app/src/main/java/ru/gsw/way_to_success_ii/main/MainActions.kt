@@ -1,15 +1,30 @@
 package ru.gsw.way_to_success_ii.main
 
+import android.annotation.SuppressLint
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.fragment_buttons.*
 import kotlinx.android.synthetic.main.windows_money.*
 import ru.gsw.way_to_success_ii.GameActivity
+import ru.gsw.way_to_success_ii.R
 import ru.gsw.way_to_success_ii.buttons.gameButtons.GameButtonsActions
 import ru.gsw.way_to_success_ii.constatns.Constants
 import ru.gsw.way_to_success_ii.saveSystem.MainSaveSystem
 import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
 
 class MainActions(private val gameActivity: GameActivity) {
+
+    @SuppressLint("ShowToast")
+    fun initializeToast(){
+        MainVars.toast = Toast.makeText(gameActivity, gameActivity.getString(R.string.button_plug), Toast.LENGTH_LONG)
+    }
+
+    @SuppressLint("ShowToast")
+    fun toast(value: String){
+        MainVars.toast.cancel()
+        MainVars.toast = Toast.makeText(gameActivity, value, Toast.LENGTH_LONG)
+        MainVars.toast.show()
+    }
 
     fun nextMove(){
         val from = MainVars.days
@@ -55,7 +70,9 @@ class MainActions(private val gameActivity: GameActivity) {
 
     fun updateButton(){
         gameActivity.buttons_fragment_main_layout.removeAllViews()
-        GameButtonsActions(gameActivity).generateButtons(gameActivity.buttons_fragment_main_layout, MainVars.currentWindow)
+        Constants.buttons.getValue(MainVars.currentWindow).getValue(MainVars.act).forEachIndexed { index, s ->
+            GameButtonsActions(gameActivity).addButton(gameActivity.buttons_fragment_main_layout, index, s)
+        }
     }
 
     private fun checkAct(){

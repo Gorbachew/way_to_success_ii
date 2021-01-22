@@ -6,8 +6,10 @@ import ru.gsw.way_to_success_ii.statusBars.StatusBarsAction
 
 class GameButtonsSettingsFood (private val gameActivity: GameActivity) {
 
-    fun drinkMilk(){
-        StatusBarsAction(gameActivity).changeFoodBar(10, '+')
+    fun drinkMilk(value: Long){
+        if(GameButtonsChecks(gameActivity).rubles(value)){
+            StatusBarsAction(gameActivity).changeFoodBar(10, '+')
+        }
     }
 
     fun eatSoup(){
