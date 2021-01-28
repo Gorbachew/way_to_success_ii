@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="name"/>
+        android:text="@string/button_plug"/>
 
     <View
         android:id="@+id/game_button_border"
@@ -25,5 +25,5 @@
         android:layout_height="match_parent"
         android:layout_weight="2"
         android:gravity="center"
-        android:text="price"/>
+        android:text="@string/button_plug"/>
 </LinearLayout>

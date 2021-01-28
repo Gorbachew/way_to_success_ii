@@ -2,9 +2,12 @@ package ru.gsw.way_to_success_ii.main
 
 import android.annotation.SuppressLint
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_game.*
 import kotlinx.android.synthetic.main.fragment_buttons.*
+import kotlinx.android.synthetic.main.fragment_buttons.buttons_fragment_main_layout
+import kotlinx.android.synthetic.main.fragment_buttons.view.*
 import kotlinx.android.synthetic.main.windows_money.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.R
@@ -12,6 +15,7 @@ import ru.gsw.way_to_success_ii.buttons.gameButtons.GameButtonsActions
 import ru.gsw.way_to_success_ii.constatns.Constants
 import ru.gsw.way_to_success_ii.saveSystem.MainSaveSystem
 import ru.gsw.way_to_success_ii.windowsMoney.WindowsMoneyActions
+import java.io.Console
 
 class MainActions(private val gameActivity: GameActivity) {
 
@@ -62,22 +66,15 @@ class MainActions(private val gameActivity: GameActivity) {
     }
 
     fun updateButton(){
-        gameActivity.buttons_fragment_main_layout.removeAllViews()
-        Log.e("TEST", MainVars.currentWindow + " " + MainVars.act)
-        Constants.buttons.getValue(MainVars.currentWindow).getValue(MainVars.act).forEachIndexed { index, s ->
-            GameButtonsActions(gameActivity).addButton(gameActivity.buttons_fragment_main_layout, index, s)
+        if(MainVars.activeFragment == "buttonsFragment"){
+            gameActivity.buttons_fragment_main_layout.removeAllViews()
+            Constants.buttons.getValue(MainVars.currentWindow).getValue(MainVars.act).forEachIndexed { index, s ->
+                GameButtonsActions(gameActivity).addButton(gameActivity.buttons_fragment_main_layout, index, s)
+            }
         }
     }
 
-    private fun checkHappyBirthday(){
-        if(MainVars.year_days >= 365){
-            MainVars.year_days -= 365
-            MainVars.age += 1
-            checkAct()
-        }
-    }
-
-    private fun checkAct(){
+    fun checkAct(){
         if( MainVars.age >= 75){
             MainVars.act = "old"
             updateButton()
@@ -92,4 +89,14 @@ class MainActions(private val gameActivity: GameActivity) {
             updateButton()
         }
     }
+
+    private fun checkHappyBirthday(){
+        if(MainVars.year_days >= 365){
+            MainVars.year_days -= 365
+            MainVars.age += 1
+            checkAct()
+        }
+    }
+
+
 }

@@ -38,6 +38,14 @@
         <item>Случайно</item>
     </string-array>
 
+    <string name="act_old">Старый</string>
+    <string name="act_adult">Взрослый</string>
+    <string name="act_youth">Юноша</string>
+    <string name="act_child">Ребенок</string>
+    <string name="act_baby">Младенец</string>
+
+    <string name="cheat_mod_on">Чит режим включен</string>
+
     <string name="button_start_game">Родиться</string>
     <string name="button_empty"> </string>
     <string name="button_plug">plug</string>
@@ -207,19 +215,8 @@
 
     <string name="check_no_rubles">У вас недостаточно Рублей</string>
     <string name="check_no_dollars">У вас недостаточно Долларов</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

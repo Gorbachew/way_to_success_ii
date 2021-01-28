@@ -125,6 +125,11 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
                 gbp.price = 100
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
+            "mood_boardgames" ->{
+                gbp.title = gameActivity.resources.getString(R.string.mood_boardgames)
+                gbp.price = 10
+                gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
+            }
             "mood_electronic_games" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_electronic_games)
                 gbp.price = 10
@@ -134,6 +139,11 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
                 gbp.title = gameActivity.resources.getString(R.string.mood_drink_beer)
                 gbp.price = 50
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
+            }
+            "mood_friends"  ->{
+                gbp.title = gameActivity.resources.getString(R.string.mood_friends)
+                gbp.price = 100
+                gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "mood_cinema" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_cinema)
@@ -543,6 +553,11 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
                 gbp.price = 50
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
+            "property_business_clothes" ->{
+                gbp.title = gameActivity.resources.getString(R.string.property_business_clothes)
+                gbp.price = 50
+                gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
+            }
             "property_weapon" ->{
                 gbp.title = gameActivity.resources.getString(R.string.property_weapon)
                 gbp.price = 50
@@ -619,6 +634,11 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
                 gbp.title = gameActivity.resources.getString(R.string.corruption_criminals)
                 gbp.price = 10
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
+            }
+            "corruption_treat_bar" ->{
+                gbp.title = gameActivity.resources.getString(R.string.corruption_treat_bar)
+                gbp.price = 50
+                gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "corruption_fines" ->{
                 gbp.title = gameActivity.resources.getString(R.string.corruption_fines)

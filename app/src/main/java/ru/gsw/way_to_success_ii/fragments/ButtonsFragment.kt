@@ -23,7 +23,7 @@ class ButtonsFragment (private val gameActivity: GameActivity, private val name:
     ): View? {
         val view = inflater.inflate(R.layout.fragment_buttons, container, false)
         MainVars.currentWindow = name
-        view.textView.text = name
+        MainVars.activeFragment = "buttonsFragment"
         view.background_image.setImageResource(background)
 
         return view
