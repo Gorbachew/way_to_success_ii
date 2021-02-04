@@ -1,11 +1,11 @@
 package ru.gsw.way_to_success_ii.buttons.gameButtons
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import androidx.core.view.marginTop
 import kotlinx.android.synthetic.main.game_button.view.*
 import ru.gsw.way_to_success_ii.GameActivity
 import ru.gsw.way_to_success_ii.R
@@ -18,7 +18,6 @@ class GameButtonsActions(private val gameActivity: GameActivity) {
     fun addButton(layout: LinearLayout, id: Int, name: String){
 
         val gameButton = gameActivity.layoutInflater.inflate(R.layout.game_button, layout, false)
-
 
         val params = gameButton.layoutParams as ViewGroup.MarginLayoutParams
         params.setMargins(0, 30, 0, 0)

@@ -40,9 +40,9 @@ object Constants {
         "hobbies" to mutableMapOf(
             "baby" to arrayOf("hobbies_try_walk", "hobbies_moo", "hobbies_smile", "hobbies_draw_wallpaper"),
             "child" to arrayOf("hobbies_karate", "hobbies_puzzles", "hobbies_peers", "hobbies_hide_seek", "hobbies_draw", "hobbies_candy"),
-            "youth" to arrayOf("hobbies_stones", "hobbies_olympiad", "hobbies_chat_people", "hobbies_walk", "hobbies_apples"),
-            "adult" to arrayOf("hobbies_walk", "hobbies_chat_people", "hobbies_draw", "hobbies_hall", "hobbies_program", "hobbies_tricks"),
-            "old" to arrayOf("hobbies_walk", "hobbies_chat_people", "hobbies_draw", "hobbies_hall", "hobbies_program", "hobbies_tricks")
+            "youth" to arrayOf("hobbies_boxing", "hobbies_olympiad", "hobbies_chat_people", "hobbies_walk", "hobbies_apples"),
+            "adult" to arrayOf("hobbies_survival", "hobbies_chat_people", "hobbies_draw", "hobbies_hall", "hobbies_program", "hobbies_tricks"),
+            "old" to arrayOf("hobbies_survival", "hobbies_chat_people", "hobbies_draw", "hobbies_hall", "hobbies_program", "hobbies_tricks")
         ),
         "freelance" to mutableMapOf(
             "child" to arrayOf("freelance_рelp", "freelance_lemonade"),

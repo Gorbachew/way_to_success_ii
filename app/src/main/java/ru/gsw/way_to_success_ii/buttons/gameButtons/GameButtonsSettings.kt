@@ -10,114 +10,115 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
         when(name){
             "food_drink_milk" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_drink_milk)
-                gbp.price = 100
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "food_eat_dirt" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_eat_dirt)
-                gbp.price = 10
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
+            }
+            "food_eat_soup" ->{
+                gbp.title = gameActivity.resources.getString(R.string.food_eat_soup)
+                gbp.price = 20
+                gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "food_eat_delicious" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_eat_delicious)
                 gbp.price = 50
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
-            "food_eat_soup" ->{
-                gbp.title = gameActivity.resources.getString(R.string.food_eat_soup)
-                gbp.price = 100
-                gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
-            }
+
             "food_digging_garbage" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_digging_garbage)
-                gbp.price = 10
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "food_beach_lunch" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_beach_lunch)
-                gbp.price = 50
+                gbp.price = 60
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "food_fast_food" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_fast_food)
-                gbp.price = 100
+                gbp.price = 200
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "food_cafe" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_cafe)
-                gbp.price = 10
+                gbp.price = 1000
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "food_restaurant" ->{
                 gbp.title = gameActivity.resources.getString(R.string.food_restaurant)
-                gbp.price = 50
+                gbp.price = 5000
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
 
             "health_sleep" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_sleep)
-                gbp.price = 100
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "health_plantain" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_plantain)
-                gbp.price = 10
+                gbp.price = 0
+                gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
+            }
+            "health_parents" ->{
+                gbp.title = gameActivity.resources.getString(R.string.health_parents)
+                gbp.price = 40
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "health_grandmother" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_grandmother)
-                gbp.price = 50
+                gbp.price = 100
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "health_herbs" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_herbs)
-                gbp.price = 100
+                gbp.price = 500
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
-            }
-            "health_parents" ->{
-                gbp.title = gameActivity.resources.getString(R.string.health_parents)
-                gbp.price = 10
-                gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "health_homeopathy" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_homeopathy)
-                gbp.price = 50
+                gbp.price = 2000
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "health_state_hospital" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_state_hospital)
-                gbp.price = 100
+                gbp.price = 4000
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "health_private_hospital" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_private_hospital)
-                gbp.price = 10
+                gbp.price = 150
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "health_social_help" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_social_help)
-                gbp.price = 50
+                gbp.price = 500
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "health_urine_therapy" ->{
                 gbp.title = gameActivity.resources.getString(R.string.health_urine_therapy)
-                gbp.price = 50
+                gbp.price = 20
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
 
             "mood_laugh" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_laugh)
-                gbp.price = 100
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "mood_dream" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_dream)
-                gbp.price = 10
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "mood_toys" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_toys)
-                gbp.price = 50
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "mood_yard" ->{
@@ -127,88 +128,88 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
             }
             "mood_boardgames" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_boardgames)
-                gbp.price = 10
+                gbp.price = 100
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "mood_electronic_games" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_electronic_games)
-                gbp.price = 10
+                gbp.price = 3
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "mood_drink_beer" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_drink_beer)
-                gbp.price = 50
+                gbp.price = 60
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
-            }
-            "mood_friends"  ->{
-                gbp.title = gameActivity.resources.getString(R.string.mood_friends)
-                gbp.price = 100
-                gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "mood_cinema" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_cinema)
-                gbp.price = 100
+                gbp.price = 500
+                gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
+            }
+            "mood_friends"  ->{
+                gbp.title = gameActivity.resources.getString(R.string.mood_friends)
+                gbp.price = 2000
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "mood_TV" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_TV)
-                gbp.price = 10
+                gbp.price = 200
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "mood_PC" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_PC)
-                gbp.price = 50
+                gbp.price = 10
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "mood_standup" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_standup)
-                gbp.price = 50
+                gbp.price = 30
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "mood_concert" ->{
                 gbp.title = gameActivity.resources.getString(R.string.mood_standup)
-                gbp.price = 50
+                gbp.price = 100
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
 
             "hobbies_try_walk" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_try_walk)
-                gbp.price = 100
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "hobbies_moo" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_moo)
-                gbp.price = 10
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "hobbies_smile" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_smile)
-                gbp.price = 50
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "hobbies_draw_wallpaper" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_draw_wallpaper)
-                gbp.price = 100
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "hobbies_karate" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_karate)
-                gbp.price = 10
+                gbp.price = 50
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "hobbies_puzzles" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_puzzles)
-                gbp.price = 50
+                gbp.price = 30
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "hobbies_peers" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_peers)
-                gbp.price = 100
+                gbp.price = 10
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }
             "hobbies_hide_seek" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_hide_seek)
-                gbp.price = 10
+                gbp.price = 20
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatSoup() }
             }
             "hobbies_draw" ->{
@@ -218,12 +219,12 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
             }
             "hobbies_candy" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_candy)
-                gbp.price = 50
+                gbp.price = 0
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
-            "hobbies_stones" ->{
-                gbp.title = gameActivity.resources.getString(R.string.hobbies_stones)
-                gbp.price = 50
+            "hobbies_boxing" ->{
+                gbp.title = gameActivity.resources.getString(R.string.hobbies_boxing)
+                gbp.price = 200
                 gbp.onClick = { GameButtonsParameters(gameActivity).eatGarbage() }
             }
             "hobbies_olympiad" ->{
@@ -238,6 +239,11 @@ class GameButtonsSettings (private val gameActivity: GameActivity) {
             }
             "hobbies_walk" ->{
                 gbp.title = gameActivity.resources.getString(R.string.hobbies_walk)
+                gbp.price = 100
+                gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
+            }
+            "hobbies_survival" ->{
+                gbp.title = gameActivity.resources.getString(R.string.hobbies_survival)
                 gbp.price = 100
                 gbp.onClick = { GameButtonsParameters(gameActivity).drinkMilk(gbp.price) }
             }

@@ -68,6 +68,7 @@ class MainActions(private val gameActivity: GameActivity) {
     fun updateButton(){
         if(MainVars.activeFragment == "buttonsFragment"){
             gameActivity.buttons_fragment_main_layout.removeAllViews()
+            Log.i("Window", MainVars.currentWindow + " " + MainVars.act)
             Constants.buttons.getValue(MainVars.currentWindow).getValue(MainVars.act).forEachIndexed { index, s ->
                 GameButtonsActions(gameActivity).addButton(gameActivity.buttons_fragment_main_layout, index, s)
             }

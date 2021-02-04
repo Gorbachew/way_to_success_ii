@@ -117,9 +117,10 @@
     <string name="hobbies_hide_seek">Играть в прятки</string>
     <string name="hobbies_draw">Рисовать</string>
     <string name="hobbies_candy">Выпрашивать конфеты</string>
-    <string name="hobbies_stones">Таскать камни</string>
+    <string name="hobbies_boxing">Сходить на секцию бокса</string>
     <string name="hobbies_olympiad">Участвовать в олимпиаде</string>
     <string name="hobbies_chat_people">Общаться с людьми</string>
+    <string name="hobbies_survival">Уроки выживания</string>
     <string name="hobbies_walk">Гулять</string>
     <string name="hobbies_apples">Воровать яблоки</string>
     <string name="hobbies_hall">Сходить в зал</string>
