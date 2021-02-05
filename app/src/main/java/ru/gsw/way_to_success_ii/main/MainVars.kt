@@ -7,6 +7,7 @@ object MainVars {
 
     lateinit var db: UserDatabase
     lateinit var toast: Toast
+    var isDrag = false
     var idCharacter: Int = 0
     var cheatMod: Boolean = false
     var countCheatMod: Int = 0
